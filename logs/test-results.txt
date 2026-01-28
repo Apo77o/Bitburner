@@ -1,0 +1,40 @@
+{
+  "ts": 1769338105546,
+  "results": [
+    {
+      "test": "/tests/test-ipc.js",
+      "status": "error",
+      "error": "TypeError: Failed to resolve module specifier '/tests/test-ipc.js'"
+    },
+    {
+      "test": "/tests/test-telemetry.js",
+      "status": "error",
+      "error": "TypeError: Failed to resolve module specifier '/tests/test-telemetry.js'"
+    },
+    {
+      "test": "/tests/test-mc.js",
+      "status": "error",
+      "error": "TypeError: Failed to resolve module specifier '/tests/test-mc.js'"
+    }
+  ]
+}
+{
+  "ts": 1769338228115,
+  "results": [
+    {
+      "test": "/tests/test-ipc.js",
+      "status": "import-error",
+      "error": "TypeError: Failed to resolve module specifier '/tests/test-ipc.js'"
+    },
+    {
+      "test": "/tests/test-telemetry.js",
+      "status": "import-error",
+      "error": "TypeError: Failed to resolve module specifier '/tests/test-telemetry.js'"
+    },
+    {
+      "test": "/tests/test-mc.js",
+      "status": "import-error",
+      "error": "TypeError: Failed to resolve module specifier '/tests/test-mc.js'"
+    }
+  ]
+}

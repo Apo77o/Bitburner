@@ -1,0 +1,1608 @@
+{
+  "joesguns": [
+    {
+      "hackThreads": 964,
+      "growThreads": 1404,
+      "weakenThreads": 1404,
+      "target": "joesguns",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 964,
+      "growThreads": 1404,
+      "weakenThreads": 1404,
+      "target": "joesguns",
+      "timestamp": 1769530698003
+    },
+    {
+      "hackThreads": 964,
+      "growThreads": 1404,
+      "weakenThreads": 1404,
+      "target": "joesguns",
+      "timestamp": 1769530703014
+    }
+  ],
+  "foodnstuff": [
+    {
+      "hackThreads": 964,
+      "growThreads": 1404,
+      "weakenThreads": 1404,
+      "target": "foodnstuff",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 964,
+      "growThreads": 1404,
+      "weakenThreads": 1404,
+      "target": "foodnstuff",
+      "timestamp": 1769530698003
+    },
+    {
+      "hackThreads": 964,
+      "growThreads": 1404,
+      "weakenThreads": 1404,
+      "target": "foodnstuff",
+      "timestamp": 1769530703014
+    }
+  ],
+  "sigma-cosmetics": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "sigma-cosmetics",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "sigma-cosmetics",
+      "timestamp": 1769530698003
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "sigma-cosmetics",
+      "timestamp": 1769530703014
+    }
+  ],
+  "nectar-net": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "nectar-net",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "nectar-net",
+      "timestamp": 1769530698003
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "nectar-net",
+      "timestamp": 1769530703014
+    }
+  ],
+  "hong-fang-tea": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "hong-fang-tea",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "hong-fang-tea",
+      "timestamp": 1769530698003
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "hong-fang-tea",
+      "timestamp": 1769530703014
+    }
+  ],
+  "harakiri-sushi": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "harakiri-sushi",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "harakiri-sushi",
+      "timestamp": 1769530698003
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "harakiri-sushi",
+      "timestamp": 1769530703015
+    }
+  ],
+  "neo-net": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "neo-net",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "neo-net",
+      "timestamp": 1769530698003
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "neo-net",
+      "timestamp": 1769530703015
+    }
+  ],
+  "zer0": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "zer0",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "zer0",
+      "timestamp": 1769530698003
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "zer0",
+      "timestamp": 1769530703015
+    }
+  ],
+  "max-hardware": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "max-hardware",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "max-hardware",
+      "timestamp": 1769530698003
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "max-hardware",
+      "timestamp": 1769530703015
+    }
+  ],
+  "iron-gym": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "iron-gym",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "iron-gym",
+      "timestamp": 1769530698003
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "iron-gym",
+      "timestamp": 1769530703015
+    }
+  ],
+  "phantasy": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "phantasy",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "phantasy",
+      "timestamp": 1769530698003
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "phantasy",
+      "timestamp": 1769530703015
+    }
+  ],
+  "silver-helix": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "silver-helix",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "silver-helix",
+      "timestamp": 1769530698003
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "silver-helix",
+      "timestamp": 1769530703015
+    }
+  ],
+  "omega-net": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "omega-net",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "omega-net",
+      "timestamp": 1769530698003
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "omega-net",
+      "timestamp": 1769530703015
+    }
+  ],
+  "crush-fitness": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "crush-fitness",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "crush-fitness",
+      "timestamp": 1769530698003
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "crush-fitness",
+      "timestamp": 1769530703015
+    }
+  ],
+  "johnson-ortho": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "johnson-ortho",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "johnson-ortho",
+      "timestamp": 1769530698003
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "johnson-ortho",
+      "timestamp": 1769530703015
+    }
+  ],
+  "the-hub": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "the-hub",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "the-hub",
+      "timestamp": 1769530698003
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "the-hub",
+      "timestamp": 1769530703015
+    }
+  ],
+  "computek": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "computek",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "computek",
+      "timestamp": 1769530698003
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "computek",
+      "timestamp": 1769530703015
+    }
+  ],
+  "netlink": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "netlink",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "netlink",
+      "timestamp": 1769530698003
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "netlink",
+      "timestamp": 1769530703015
+    }
+  ],
+  "rothman-uni": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "rothman-uni",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "rothman-uni",
+      "timestamp": 1769530698003
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "rothman-uni",
+      "timestamp": 1769530703015
+    }
+  ],
+  "catalyst": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "catalyst",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "catalyst",
+      "timestamp": 1769530698003
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "catalyst",
+      "timestamp": 1769530703015
+    }
+  ],
+  "aevum-police": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "aevum-police",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "aevum-police",
+      "timestamp": 1769530698003
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "aevum-police",
+      "timestamp": 1769530703015
+    }
+  ],
+  "summit-uni": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "summit-uni",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "summit-uni",
+      "timestamp": 1769530698004
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "summit-uni",
+      "timestamp": 1769530703015
+    }
+  ],
+  "millenium-fitness": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "millenium-fitness",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "millenium-fitness",
+      "timestamp": 1769530698004
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "millenium-fitness",
+      "timestamp": 1769530703015
+    }
+  ],
+  "rho-construction": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "rho-construction",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "rho-construction",
+      "timestamp": 1769530698004
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "rho-construction",
+      "timestamp": 1769530703015
+    }
+  ],
+  "alpha-ent": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "alpha-ent",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "alpha-ent",
+      "timestamp": 1769530698004
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "alpha-ent",
+      "timestamp": 1769530703015
+    }
+  ],
+  "syscore": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "syscore",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "syscore",
+      "timestamp": 1769530698004
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "syscore",
+      "timestamp": 1769530703015
+    }
+  ],
+  "zb-institute": [
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "zb-institute",
+      "timestamp": 1769505643536
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "zb-institute",
+      "timestamp": 1769505648541
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "zb-institute",
+      "timestamp": 1769505653558
+    }
+  ],
+  "lexo-corp": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "lexo-corp",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "lexo-corp",
+      "timestamp": 1769530698004
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "lexo-corp",
+      "timestamp": 1769530703015
+    }
+  ],
+  "solaris": [
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "solaris",
+      "timestamp": 1769505643536
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "solaris",
+      "timestamp": 1769505648541
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "solaris",
+      "timestamp": 1769505653558
+    }
+  ],
+  "unitalife": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "unitalife",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "unitalife",
+      "timestamp": 1769530698004
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "unitalife",
+      "timestamp": 1769530703015
+    }
+  ],
+  "snap-fitness": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "snap-fitness",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "snap-fitness",
+      "timestamp": 1769530698004
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "snap-fitness",
+      "timestamp": 1769530703015
+    }
+  ],
+  "global-pharm": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "global-pharm",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "global-pharm",
+      "timestamp": 1769530698004
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "global-pharm",
+      "timestamp": 1769530703015
+    }
+  ],
+  "applied-energetics": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "applied-energetics",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "applied-energetics",
+      "timestamp": 1769530698004
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "applied-energetics",
+      "timestamp": 1769530703015
+    }
+  ],
+  "zb-def": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "zb-def",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "zb-def",
+      "timestamp": 1769530698004
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "zb-def",
+      "timestamp": 1769530703015
+    }
+  ],
+  "nova-med": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "nova-med",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "nova-med",
+      "timestamp": 1769530698004
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "nova-med",
+      "timestamp": 1769530703015
+    }
+  ],
+  "deltaone": [
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "deltaone",
+      "timestamp": 1769505643536
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "deltaone",
+      "timestamp": 1769505648541
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "deltaone",
+      "timestamp": 1769505653558
+    }
+  ],
+  "galactic-cyber": [
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "galactic-cyber",
+      "timestamp": 1769505643536
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "galactic-cyber",
+      "timestamp": 1769505648541
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "galactic-cyber",
+      "timestamp": 1769505653558
+    }
+  ],
+  "zeus-med": [
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "zeus-med",
+      "timestamp": 1769505643536
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "zeus-med",
+      "timestamp": 1769505648541
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "zeus-med",
+      "timestamp": 1769505653558
+    }
+  ],
+  "aerocorp": [
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "aerocorp",
+      "timestamp": 1769505643536
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "aerocorp",
+      "timestamp": 1769505648541
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "aerocorp",
+      "timestamp": 1769505653558
+    }
+  ],
+  "vitalife": [
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "vitalife",
+      "timestamp": 1769505643536
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "vitalife",
+      "timestamp": 1769505648541
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "vitalife",
+      "timestamp": 1769505653558
+    }
+  ],
+  "titan-labs": [
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "titan-labs",
+      "timestamp": 1769505643536
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "titan-labs",
+      "timestamp": 1769505648541
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "titan-labs",
+      "timestamp": 1769505653558
+    }
+  ],
+  "icarus": [
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "icarus",
+      "timestamp": 1769505643536
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "icarus",
+      "timestamp": 1769505648541
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "icarus",
+      "timestamp": 1769505653558
+    }
+  ],
+  "microdyne": [
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "microdyne",
+      "timestamp": 1769505643536
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "microdyne",
+      "timestamp": 1769505648541
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "microdyne",
+      "timestamp": 1769505653558
+    }
+  ],
+  "helios": [
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "helios",
+      "timestamp": 1769505643536
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "helios",
+      "timestamp": 1769505648541
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "helios",
+      "timestamp": 1769505653558
+    }
+  ],
+  "univ-energy": [
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "univ-energy",
+      "timestamp": 1769530692999
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "univ-energy",
+      "timestamp": 1769530698004
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "prep": true,
+      "target": "univ-energy",
+      "timestamp": 1769530703015
+    }
+  ],
+  "infocomm": [
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "infocomm",
+      "timestamp": 1769505643536
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "infocomm",
+      "timestamp": 1769505648541
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "infocomm",
+      "timestamp": 1769505653558
+    }
+  ],
+  "omnia": [
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "omnia",
+      "timestamp": 1769505643536
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "omnia",
+      "timestamp": 1769505648541
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "omnia",
+      "timestamp": 1769505653558
+    }
+  ],
+  "stormtech": [
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "stormtech",
+      "timestamp": 1769505643536
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "stormtech",
+      "timestamp": 1769505648541
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "stormtech",
+      "timestamp": 1769505653558
+    }
+  ],
+  "taiyang-digital": [
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "taiyang-digital",
+      "timestamp": 1769505643536
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "taiyang-digital",
+      "timestamp": 1769505648541
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "taiyang-digital",
+      "timestamp": 1769505653558
+    }
+  ],
+  "kuai-gong": [
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "kuai-gong",
+      "timestamp": 1769505643536
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "kuai-gong",
+      "timestamp": 1769505648541
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "kuai-gong",
+      "timestamp": 1769505653558
+    }
+  ],
+  "nwo": [
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "nwo",
+      "timestamp": 1769505643536
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "nwo",
+      "timestamp": 1769505648542
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "nwo",
+      "timestamp": 1769505653558
+    }
+  ],
+  "4sigma": [
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "4sigma",
+      "timestamp": 1769505643536
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "4sigma",
+      "timestamp": 1769505648542
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "4sigma",
+      "timestamp": 1769505653558
+    }
+  ],
+  "b-and-a": [
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "b-and-a",
+      "timestamp": 1769505643536
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "b-and-a",
+      "timestamp": 1769505648542
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "b-and-a",
+      "timestamp": 1769505653558
+    }
+  ],
+  "defcomm": [
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "defcomm",
+      "timestamp": 1769505643536
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "defcomm",
+      "timestamp": 1769505648542
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "defcomm",
+      "timestamp": 1769505653558
+    }
+  ],
+  "ecorp": [
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "ecorp",
+      "timestamp": 1769505643536
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "ecorp",
+      "timestamp": 1769505648542
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "ecorp",
+      "timestamp": 1769505653558
+    }
+  ],
+  "blade": [
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "blade",
+      "timestamp": 1769505643536
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "blade",
+      "timestamp": 1769505648542
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "blade",
+      "timestamp": 1769505653558
+    }
+  ],
+  "omnitek": [
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "omnitek",
+      "timestamp": 1769505643536
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "omnitek",
+      "timestamp": 1769505648542
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "omnitek",
+      "timestamp": 1769505653558
+    }
+  ],
+  "powerhouse-fitness": [
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "powerhouse-fitness",
+      "timestamp": 1769505643536
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "powerhouse-fitness",
+      "timestamp": 1769505648542
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "powerhouse-fitness",
+      "timestamp": 1769505653558
+    }
+  ],
+  "megacorp": [
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "megacorp",
+      "timestamp": 1769505643536
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "megacorp",
+      "timestamp": 1769505648542
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "megacorp",
+      "timestamp": 1769505653558
+    }
+  ],
+  "fulcrumtech": [
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "fulcrumtech",
+      "timestamp": 1769505643536
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "fulcrumtech",
+      "timestamp": 1769505648542
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "fulcrumtech",
+      "timestamp": 1769505653558
+    }
+  ],
+  "clarkinc": [
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "clarkinc",
+      "timestamp": 1769505643536
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "clarkinc",
+      "timestamp": 1769505648542
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "clarkinc",
+      "timestamp": 1769505653558
+    }
+  ],
+  "fulcrumassets": [
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "fulcrumassets",
+      "timestamp": 1769505643536
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "fulcrumassets",
+      "timestamp": 1769505648542
+    },
+    {
+      "hackThreads": 0,
+      "growThreads": 936,
+      "weakenThreads": 936,
+      "prep": true,
+      "target": "fulcrumassets",
+      "timestamp": 1769505653558
+    }
+  ]
+}

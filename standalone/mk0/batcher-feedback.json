@@ -1,0 +1,2910 @@
+{
+  "joesguns": [
+    {
+      "sec": 5,
+      "minSec": 5,
+      "money": 2500000,
+      "maxMoney": 2500000,
+      "contract": {
+        "hackThreads": 964,
+        "growThreads": 1404,
+        "weakenThreads": 1404,
+        "target": "joesguns",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 5,
+      "minSec": 5,
+      "money": 2500000,
+      "maxMoney": 2500000,
+      "contract": {
+        "hackThreads": 964,
+        "growThreads": 1404,
+        "weakenThreads": 1404,
+        "target": "joesguns",
+        "timestamp": 1769530698003
+      },
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 5,
+      "minSec": 5,
+      "money": 2500000,
+      "maxMoney": 2500000,
+      "contract": {
+        "hackThreads": 964,
+        "growThreads": 1404,
+        "weakenThreads": 1404,
+        "target": "joesguns",
+        "timestamp": 1769530703014
+      },
+      "timestamp": 1769530703014
+    }
+  ],
+  "foodnstuff": [
+    {
+      "sec": 3,
+      "minSec": 3,
+      "money": 2000000,
+      "maxMoney": 2000000,
+      "contract": {
+        "hackThreads": 964,
+        "growThreads": 1404,
+        "weakenThreads": 1404,
+        "target": "foodnstuff",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 3,
+      "minSec": 3,
+      "money": 2000000,
+      "maxMoney": 2000000,
+      "contract": {
+        "hackThreads": 964,
+        "growThreads": 1404,
+        "weakenThreads": 1404,
+        "target": "foodnstuff",
+        "timestamp": 1769530698003
+      },
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 3,
+      "minSec": 3,
+      "money": 2000000,
+      "maxMoney": 2000000,
+      "contract": {
+        "hackThreads": 964,
+        "growThreads": 1404,
+        "weakenThreads": 1404,
+        "target": "foodnstuff",
+        "timestamp": 1769530703014
+      },
+      "timestamp": 1769530703014
+    }
+  ],
+  "sigma-cosmetics": [
+    {
+      "sec": 100,
+      "minSec": 3,
+      "money": 1005137.0669076343,
+      "maxMoney": 2300000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "sigma-cosmetics",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 100,
+      "minSec": 3,
+      "money": 1005137.0669076343,
+      "maxMoney": 2300000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "sigma-cosmetics",
+        "timestamp": 1769530698003
+      },
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 100,
+      "minSec": 3,
+      "money": 1005137.0669076343,
+      "maxMoney": 2300000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "sigma-cosmetics",
+        "timestamp": 1769530703014
+      },
+      "timestamp": 1769530703014
+    }
+  ],
+  "nectar-net": [
+    {
+      "sec": 20,
+      "minSec": 7,
+      "money": 550000,
+      "maxMoney": 2750000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "nectar-net",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 20,
+      "minSec": 7,
+      "money": 550000,
+      "maxMoney": 2750000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "nectar-net",
+        "timestamp": 1769530698003
+      },
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 20,
+      "minSec": 7,
+      "money": 550000,
+      "maxMoney": 2750000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "nectar-net",
+        "timestamp": 1769530703014
+      },
+      "timestamp": 1769530703014
+    }
+  ],
+  "hong-fang-tea": [
+    {
+      "sec": 15,
+      "minSec": 5,
+      "money": 600000,
+      "maxMoney": 3000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "hong-fang-tea",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 15,
+      "minSec": 5,
+      "money": 600000,
+      "maxMoney": 3000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "hong-fang-tea",
+        "timestamp": 1769530698003
+      },
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 15,
+      "minSec": 5,
+      "money": 600000,
+      "maxMoney": 3000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "hong-fang-tea",
+        "timestamp": 1769530703014
+      },
+      "timestamp": 1769530703014
+    }
+  ],
+  "harakiri-sushi": [
+    {
+      "sec": 15,
+      "minSec": 5,
+      "money": 800000,
+      "maxMoney": 4000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "harakiri-sushi",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 15,
+      "minSec": 5,
+      "money": 800000,
+      "maxMoney": 4000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "harakiri-sushi",
+        "timestamp": 1769530698003
+      },
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 15,
+      "minSec": 5,
+      "money": 800000,
+      "maxMoney": 4000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "harakiri-sushi",
+        "timestamp": 1769530703015
+      },
+      "timestamp": 1769530703015
+    }
+  ],
+  "neo-net": [
+    {
+      "sec": 25,
+      "minSec": 8,
+      "money": 1000000,
+      "maxMoney": 5000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "neo-net",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 25,
+      "minSec": 8,
+      "money": 1000000,
+      "maxMoney": 5000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "neo-net",
+        "timestamp": 1769530698003
+      },
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 25,
+      "minSec": 8,
+      "money": 1000000,
+      "maxMoney": 5000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "neo-net",
+        "timestamp": 1769530703015
+      },
+      "timestamp": 1769530703015
+    }
+  ],
+  "zer0": [
+    {
+      "sec": 25,
+      "minSec": 8,
+      "money": 1500000,
+      "maxMoney": 7500000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "zer0",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 25,
+      "minSec": 8,
+      "money": 1500000,
+      "maxMoney": 7500000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "zer0",
+        "timestamp": 1769530698003
+      },
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 25,
+      "minSec": 8,
+      "money": 1500000,
+      "maxMoney": 7500000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "zer0",
+        "timestamp": 1769530703015
+      },
+      "timestamp": 1769530703015
+    }
+  ],
+  "max-hardware": [
+    {
+      "sec": 15,
+      "minSec": 5,
+      "money": 2000000,
+      "maxMoney": 10000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "max-hardware",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 15,
+      "minSec": 5,
+      "money": 2000000,
+      "maxMoney": 10000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "max-hardware",
+        "timestamp": 1769530698003
+      },
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 15,
+      "minSec": 5,
+      "money": 2000000,
+      "maxMoney": 10000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "max-hardware",
+        "timestamp": 1769530703015
+      },
+      "timestamp": 1769530703015
+    }
+  ],
+  "iron-gym": [
+    {
+      "sec": 30,
+      "minSec": 10,
+      "money": 4000000,
+      "maxMoney": 20000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "iron-gym",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 30,
+      "minSec": 10,
+      "money": 4000000,
+      "maxMoney": 20000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "iron-gym",
+        "timestamp": 1769530698003
+      },
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 30,
+      "minSec": 10,
+      "money": 4000000,
+      "maxMoney": 20000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "iron-gym",
+        "timestamp": 1769530703015
+      },
+      "timestamp": 1769530703015
+    }
+  ],
+  "phantasy": [
+    {
+      "sec": 20,
+      "minSec": 7,
+      "money": 4800000,
+      "maxMoney": 24000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "phantasy",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 20,
+      "minSec": 7,
+      "money": 4800000,
+      "maxMoney": 24000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "phantasy",
+        "timestamp": 1769530698003
+      },
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 20,
+      "minSec": 7,
+      "money": 4800000,
+      "maxMoney": 24000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "phantasy",
+        "timestamp": 1769530703015
+      },
+      "timestamp": 1769530703015
+    }
+  ],
+  "silver-helix": [
+    {
+      "sec": 30,
+      "minSec": 10,
+      "money": 9000000,
+      "maxMoney": 45000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "silver-helix",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 30,
+      "minSec": 10,
+      "money": 9000000,
+      "maxMoney": 45000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "silver-helix",
+        "timestamp": 1769530698003
+      },
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 30,
+      "minSec": 10,
+      "money": 9000000,
+      "maxMoney": 45000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "silver-helix",
+        "timestamp": 1769530703015
+      },
+      "timestamp": 1769530703015
+    }
+  ],
+  "omega-net": [
+    {
+      "sec": 25,
+      "minSec": 8,
+      "money": 12868847.4,
+      "maxMoney": 64344237,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "omega-net",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 25,
+      "minSec": 8,
+      "money": 12868847.4,
+      "maxMoney": 64344237,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "omega-net",
+        "timestamp": 1769530698003
+      },
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 25,
+      "minSec": 8,
+      "money": 12868847.4,
+      "maxMoney": 64344237,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "omega-net",
+        "timestamp": 1769530703015
+      },
+      "timestamp": 1769530703015
+    }
+  ],
+  "crush-fitness": [
+    {
+      "sec": 38,
+      "minSec": 13,
+      "money": 9262699.4,
+      "maxMoney": 46313497,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "crush-fitness",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 38,
+      "minSec": 13,
+      "money": 9262699.4,
+      "maxMoney": 46313497,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "crush-fitness",
+        "timestamp": 1769530698003
+      },
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 38,
+      "minSec": 13,
+      "money": 9262699.4,
+      "maxMoney": 46313497,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "crush-fitness",
+        "timestamp": 1769530703015
+      },
+      "timestamp": 1769530703015
+    }
+  ],
+  "johnson-ortho": [
+    {
+      "sec": 43,
+      "minSec": 14,
+      "money": 15539770.8,
+      "maxMoney": 77698854,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "johnson-ortho",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 43,
+      "minSec": 14,
+      "money": 15539770.8,
+      "maxMoney": 77698854,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "johnson-ortho",
+        "timestamp": 1769530698003
+      },
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 43,
+      "minSec": 14,
+      "money": 15539770.8,
+      "maxMoney": 77698854,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "johnson-ortho",
+        "timestamp": 1769530703015
+      },
+      "timestamp": 1769530703015
+    }
+  ],
+  "the-hub": [
+    {
+      "sec": 38,
+      "minSec": 13,
+      "money": 37071276.800000004,
+      "maxMoney": 185356384,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "the-hub",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 38,
+      "minSec": 13,
+      "money": 37071276.800000004,
+      "maxMoney": 185356384,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "the-hub",
+        "timestamp": 1769530698003
+      },
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 38,
+      "minSec": 13,
+      "money": 37071276.800000004,
+      "maxMoney": 185356384,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "the-hub",
+        "timestamp": 1769530703015
+      },
+      "timestamp": 1769530703015
+    }
+  ],
+  "computek": [
+    {
+      "sec": 57,
+      "minSec": 19,
+      "money": 49592557.6,
+      "maxMoney": 247962788,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "computek",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 57,
+      "minSec": 19,
+      "money": 49592557.6,
+      "maxMoney": 247962788,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "computek",
+        "timestamp": 1769530698003
+      },
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 57,
+      "minSec": 19,
+      "money": 49592557.6,
+      "maxMoney": 247962788,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "computek",
+        "timestamp": 1769530703015
+      },
+      "timestamp": 1769530703015
+    }
+  ],
+  "netlink": [
+    {
+      "sec": 62,
+      "minSec": 21,
+      "money": 55000000,
+      "maxMoney": 275000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "netlink",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 62,
+      "minSec": 21,
+      "money": 55000000,
+      "maxMoney": 275000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "netlink",
+        "timestamp": 1769530698003
+      },
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 62,
+      "minSec": 21,
+      "money": 55000000,
+      "maxMoney": 275000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "netlink",
+        "timestamp": 1769530703015
+      },
+      "timestamp": 1769530703015
+    }
+  ],
+  "rothman-uni": [
+    {
+      "sec": 53,
+      "minSec": 18,
+      "money": 39895156.800000004,
+      "maxMoney": 199475784,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "rothman-uni",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 53,
+      "minSec": 18,
+      "money": 39895156.800000004,
+      "maxMoney": 199475784,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "rothman-uni",
+        "timestamp": 1769530698003
+      },
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 53,
+      "minSec": 18,
+      "money": 39895156.800000004,
+      "maxMoney": 199475784,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "rothman-uni",
+        "timestamp": 1769530703015
+      },
+      "timestamp": 1769530703015
+    }
+  ],
+  "catalyst": [
+    {
+      "sec": 62,
+      "minSec": 21,
+      "money": 81130746.60000001,
+      "maxMoney": 405653733,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "catalyst",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 62,
+      "minSec": 21,
+      "money": 81130746.60000001,
+      "maxMoney": 405653733,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "catalyst",
+        "timestamp": 1769530698003
+      },
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 62,
+      "minSec": 21,
+      "money": 81130746.60000001,
+      "maxMoney": 405653733,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "catalyst",
+        "timestamp": 1769530703015
+      },
+      "timestamp": 1769530703015
+    }
+  ],
+  "aevum-police": [
+    {
+      "sec": 74,
+      "minSec": 25,
+      "money": 67221065.2,
+      "maxMoney": 336105326,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "aevum-police",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 74,
+      "minSec": 25,
+      "money": 67221065.2,
+      "maxMoney": 336105326,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "aevum-police",
+        "timestamp": 1769530698003
+      },
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 74,
+      "minSec": 25,
+      "money": 67221065.2,
+      "maxMoney": 336105326,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "aevum-police",
+        "timestamp": 1769530703015
+      },
+      "timestamp": 1769530703015
+    }
+  ],
+  "summit-uni": [
+    {
+      "sec": 55,
+      "minSec": 18,
+      "money": 49286117.800000004,
+      "maxMoney": 246430589,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "summit-uni",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 55,
+      "minSec": 18,
+      "money": 49286117.800000004,
+      "maxMoney": 246430589,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "summit-uni",
+        "timestamp": 1769530698004
+      },
+      "timestamp": 1769530698004
+    },
+    {
+      "sec": 55,
+      "minSec": 18,
+      "money": 49286117.800000004,
+      "maxMoney": 246430589,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "summit-uni",
+        "timestamp": 1769530703015
+      },
+      "timestamp": 1769530703015
+    }
+  ],
+  "millenium-fitness": [
+    {
+      "sec": 54,
+      "minSec": 18,
+      "money": 50000000,
+      "maxMoney": 250000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "millenium-fitness",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 54,
+      "minSec": 18,
+      "money": 50000000,
+      "maxMoney": 250000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "millenium-fitness",
+        "timestamp": 1769530698004
+      },
+      "timestamp": 1769530698004
+    },
+    {
+      "sec": 54,
+      "minSec": 18,
+      "money": 50000000,
+      "maxMoney": 250000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "millenium-fitness",
+        "timestamp": 1769530703015
+      },
+      "timestamp": 1769530703015
+    }
+  ],
+  "rho-construction": [
+    {
+      "sec": 57,
+      "minSec": 19,
+      "money": 112071094.80000001,
+      "maxMoney": 560355474,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "rho-construction",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 57,
+      "minSec": 19,
+      "money": 112071094.80000001,
+      "maxMoney": 560355474,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "rho-construction",
+        "timestamp": 1769530698004
+      },
+      "timestamp": 1769530698004
+    },
+    {
+      "sec": 57,
+      "minSec": 19,
+      "money": 112071094.80000001,
+      "maxMoney": 560355474,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "rho-construction",
+        "timestamp": 1769530703015
+      },
+      "timestamp": 1769530703015
+    }
+  ],
+  "alpha-ent": [
+    {
+      "sec": 62,
+      "minSec": 21,
+      "money": 144193895.8,
+      "maxMoney": 720969479,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "alpha-ent",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 62,
+      "minSec": 21,
+      "money": 144193895.8,
+      "maxMoney": 720969479,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "alpha-ent",
+        "timestamp": 1769530698004
+      },
+      "timestamp": 1769530698004
+    },
+    {
+      "sec": 62,
+      "minSec": 21,
+      "money": 144193895.8,
+      "maxMoney": 720969479,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "alpha-ent",
+        "timestamp": 1769530703015
+      },
+      "timestamp": 1769530703015
+    }
+  ],
+  "syscore": [
+    {
+      "sec": 76,
+      "minSec": 25,
+      "money": 113964512.60000001,
+      "maxMoney": 569822563,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "syscore",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 76,
+      "minSec": 25,
+      "money": 113964512.60000001,
+      "maxMoney": 569822563,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "syscore",
+        "timestamp": 1769530698004
+      },
+      "timestamp": 1769530698004
+    },
+    {
+      "sec": 76,
+      "minSec": 25,
+      "money": 113964512.60000001,
+      "maxMoney": 569822563,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "syscore",
+        "timestamp": 1769530703015
+      },
+      "timestamp": 1769530703015
+    }
+  ],
+  "zb-institute": [
+    {
+      "sec": 65,
+      "minSec": 22,
+      "money": 205713985.8,
+      "maxMoney": 1028569929,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "zb-institute",
+        "timestamp": 1769505643536
+      },
+      "timestamp": 1769505643536
+    },
+    {
+      "sec": 65,
+      "minSec": 22,
+      "money": 205713985.8,
+      "maxMoney": 1028569929,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "zb-institute",
+        "timestamp": 1769505648541
+      },
+      "timestamp": 1769505648541
+    },
+    {
+      "sec": 65,
+      "minSec": 22,
+      "money": 205713985.8,
+      "maxMoney": 1028569929,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "zb-institute",
+        "timestamp": 1769505653558
+      },
+      "timestamp": 1769505653558
+    }
+  ],
+  "lexo-corp": [
+    {
+      "sec": 70,
+      "minSec": 23,
+      "money": 159988912.8,
+      "maxMoney": 799944564,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "lexo-corp",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 70,
+      "minSec": 23,
+      "money": 159988912.8,
+      "maxMoney": 799944564,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "lexo-corp",
+        "timestamp": 1769530698004
+      },
+      "timestamp": 1769530698004
+    },
+    {
+      "sec": 70,
+      "minSec": 23,
+      "money": 159988912.8,
+      "maxMoney": 799944564,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "lexo-corp",
+        "timestamp": 1769530703015
+      },
+      "timestamp": 1769530703015
+    }
+  ],
+  "solaris": [
+    {
+      "sec": 76,
+      "minSec": 25,
+      "money": 148528397.20000002,
+      "maxMoney": 742641986,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "solaris",
+        "timestamp": 1769505643536
+      },
+      "timestamp": 1769505643536
+    },
+    {
+      "sec": 76,
+      "minSec": 25,
+      "money": 148528397.20000002,
+      "maxMoney": 742641986,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "solaris",
+        "timestamp": 1769505648541
+      },
+      "timestamp": 1769505648541
+    },
+    {
+      "sec": 76,
+      "minSec": 25,
+      "money": 148528397.20000002,
+      "maxMoney": 742641986,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "solaris",
+        "timestamp": 1769505653558
+      },
+      "timestamp": 1769505653558
+    }
+  ],
+  "unitalife": [
+    {
+      "sec": 76,
+      "minSec": 25,
+      "money": 203761253,
+      "maxMoney": 1018806265,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "unitalife",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 76,
+      "minSec": 25,
+      "money": 203761253,
+      "maxMoney": 1018806265,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "unitalife",
+        "timestamp": 1769530698004
+      },
+      "timestamp": 1769530698004
+    },
+    {
+      "sec": 76,
+      "minSec": 25,
+      "money": 203761253,
+      "maxMoney": 1018806265,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "unitalife",
+        "timestamp": 1769530703015
+      },
+      "timestamp": 1769530703015
+    }
+  ],
+  "snap-fitness": [
+    {
+      "sec": 57,
+      "minSec": 19,
+      "money": 90000000,
+      "maxMoney": 450000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "snap-fitness",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 57,
+      "minSec": 19,
+      "money": 90000000,
+      "maxMoney": 450000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "snap-fitness",
+        "timestamp": 1769530698004
+      },
+      "timestamp": 1769530698004
+    },
+    {
+      "sec": 57,
+      "minSec": 19,
+      "money": 90000000,
+      "maxMoney": 450000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "snap-fitness",
+        "timestamp": 1769530703015
+      },
+      "timestamp": 1769530703015
+    }
+  ],
+  "global-pharm": [
+    {
+      "sec": 80,
+      "minSec": 27,
+      "money": 306970317.8,
+      "maxMoney": 1534851589,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "global-pharm",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 80,
+      "minSec": 27,
+      "money": 306970317.8,
+      "maxMoney": 1534851589,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "global-pharm",
+        "timestamp": 1769530698004
+      },
+      "timestamp": 1769530698004
+    },
+    {
+      "sec": 80,
+      "minSec": 27,
+      "money": 306970317.8,
+      "maxMoney": 1534851589,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "global-pharm",
+        "timestamp": 1769530703015
+      },
+      "timestamp": 1769530703015
+    }
+  ],
+  "applied-energetics": [
+    {
+      "sec": 65,
+      "minSec": 22,
+      "money": 169703316.8,
+      "maxMoney": 848516584,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "applied-energetics",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 65,
+      "minSec": 22,
+      "money": 169703316.8,
+      "maxMoney": 848516584,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "applied-energetics",
+        "timestamp": 1769530698004
+      },
+      "timestamp": 1769530698004
+    },
+    {
+      "sec": 65,
+      "minSec": 22,
+      "money": 169703316.8,
+      "maxMoney": 848516584,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "applied-energetics",
+        "timestamp": 1769530703015
+      },
+      "timestamp": 1769530703015
+    }
+  ],
+  "zb-def": [
+    {
+      "sec": 59,
+      "minSec": 20,
+      "money": 204954626.60000002,
+      "maxMoney": 1024773133,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "zb-def",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 59,
+      "minSec": 20,
+      "money": 204954626.60000002,
+      "maxMoney": 1024773133,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "zb-def",
+        "timestamp": 1769530698004
+      },
+      "timestamp": 1769530698004
+    },
+    {
+      "sec": 59,
+      "minSec": 20,
+      "money": 204954626.60000002,
+      "maxMoney": 1024773133,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "zb-def",
+        "timestamp": 1769530703015
+      },
+      "timestamp": 1769530703015
+    }
+  ],
+  "nova-med": [
+    {
+      "sec": 78,
+      "minSec": 26,
+      "money": 225133190,
+      "maxMoney": 1125665950,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "nova-med",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 78,
+      "minSec": 26,
+      "money": 225133190,
+      "maxMoney": 1125665950,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "nova-med",
+        "timestamp": 1769530698004
+      },
+      "timestamp": 1769530698004
+    },
+    {
+      "sec": 78,
+      "minSec": 26,
+      "money": 225133190,
+      "maxMoney": 1125665950,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "nova-med",
+        "timestamp": 1769530703015
+      },
+      "timestamp": 1769530703015
+    }
+  ],
+  "deltaone": [
+    {
+      "sec": 75,
+      "minSec": 25,
+      "money": 275051697.6,
+      "maxMoney": 1375258488,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "deltaone",
+        "timestamp": 1769505643536
+      },
+      "timestamp": 1769505643536
+    },
+    {
+      "sec": 75,
+      "minSec": 25,
+      "money": 275051697.6,
+      "maxMoney": 1375258488,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "deltaone",
+        "timestamp": 1769505648541
+      },
+      "timestamp": 1769505648541
+    },
+    {
+      "sec": 75,
+      "minSec": 25,
+      "money": 275051697.6,
+      "maxMoney": 1375258488,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "deltaone",
+        "timestamp": 1769505653558
+      },
+      "timestamp": 1769505653558
+    }
+  ],
+  "galactic-cyber": [
+    {
+      "sec": 57,
+      "minSec": 19,
+      "money": 160485762.8,
+      "maxMoney": 802428814,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "galactic-cyber",
+        "timestamp": 1769505643536
+      },
+      "timestamp": 1769505643536
+    },
+    {
+      "sec": 57,
+      "minSec": 19,
+      "money": 160485762.8,
+      "maxMoney": 802428814,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "galactic-cyber",
+        "timestamp": 1769505648541
+      },
+      "timestamp": 1769505648541
+    },
+    {
+      "sec": 57,
+      "minSec": 19,
+      "money": 160485762.8,
+      "maxMoney": 802428814,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "galactic-cyber",
+        "timestamp": 1769505653558
+      },
+      "timestamp": 1769505653558
+    }
+  ],
+  "zeus-med": [
+    {
+      "sec": 84,
+      "minSec": 28,
+      "money": 293232883.40000004,
+      "maxMoney": 1466164417,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "zeus-med",
+        "timestamp": 1769505643536
+      },
+      "timestamp": 1769505643536
+    },
+    {
+      "sec": 84,
+      "minSec": 28,
+      "money": 293232883.40000004,
+      "maxMoney": 1466164417,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "zeus-med",
+        "timestamp": 1769505648541
+      },
+      "timestamp": 1769505648541
+    },
+    {
+      "sec": 84,
+      "minSec": 28,
+      "money": 293232883.40000004,
+      "maxMoney": 1466164417,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "zeus-med",
+        "timestamp": 1769505653558
+      },
+      "timestamp": 1769505653558
+    }
+  ],
+  "aerocorp": [
+    {
+      "sec": 84,
+      "minSec": 28,
+      "money": 217704733,
+      "maxMoney": 1088523665,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "aerocorp",
+        "timestamp": 1769505643536
+      },
+      "timestamp": 1769505643536
+    },
+    {
+      "sec": 84,
+      "minSec": 28,
+      "money": 217704733,
+      "maxMoney": 1088523665,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "aerocorp",
+        "timestamp": 1769505648541
+      },
+      "timestamp": 1769505648541
+    },
+    {
+      "sec": 84,
+      "minSec": 28,
+      "money": 217704733,
+      "maxMoney": 1088523665,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "aerocorp",
+        "timestamp": 1769505653558
+      },
+      "timestamp": 1769505653558
+    }
+  ],
+  "vitalife": [
+    {
+      "sec": 90,
+      "minSec": 30,
+      "money": 153602013,
+      "maxMoney": 768010065,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "vitalife",
+        "timestamp": 1769505643536
+      },
+      "timestamp": 1769505643536
+    },
+    {
+      "sec": 90,
+      "minSec": 30,
+      "money": 153602013,
+      "maxMoney": 768010065,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "vitalife",
+        "timestamp": 1769505648541
+      },
+      "timestamp": 1769505648541
+    },
+    {
+      "sec": 90,
+      "minSec": 30,
+      "money": 153602013,
+      "maxMoney": 768010065,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "vitalife",
+        "timestamp": 1769505653558
+      },
+      "timestamp": 1769505653558
+    }
+  ],
+  "titan-labs": [
+    {
+      "sec": 77,
+      "minSec": 26,
+      "money": 155364087,
+      "maxMoney": 776820435,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "titan-labs",
+        "timestamp": 1769505643536
+      },
+      "timestamp": 1769505643536
+    },
+    {
+      "sec": 77,
+      "minSec": 26,
+      "money": 155364087,
+      "maxMoney": 776820435,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "titan-labs",
+        "timestamp": 1769505648541
+      },
+      "timestamp": 1769505648541
+    },
+    {
+      "sec": 77,
+      "minSec": 26,
+      "money": 155364087,
+      "maxMoney": 776820435,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "titan-labs",
+        "timestamp": 1769505653558
+      },
+      "timestamp": 1769505653558
+    }
+  ],
+  "icarus": [
+    {
+      "sec": 86,
+      "minSec": 29,
+      "money": 184780160.8,
+      "maxMoney": 923900804,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "icarus",
+        "timestamp": 1769505643536
+      },
+      "timestamp": 1769505643536
+    },
+    {
+      "sec": 86,
+      "minSec": 29,
+      "money": 184780160.8,
+      "maxMoney": 923900804,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "icarus",
+        "timestamp": 1769505648541
+      },
+      "timestamp": 1769505648541
+    },
+    {
+      "sec": 86,
+      "minSec": 29,
+      "money": 184780160.8,
+      "maxMoney": 923900804,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "icarus",
+        "timestamp": 1769505653558
+      },
+      "timestamp": 1769505653558
+    }
+  ],
+  "microdyne": [
+    {
+      "sec": 72,
+      "minSec": 24,
+      "money": 113551523.60000001,
+      "maxMoney": 567757618,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "microdyne",
+        "timestamp": 1769505643536
+      },
+      "timestamp": 1769505643536
+    },
+    {
+      "sec": 72,
+      "minSec": 24,
+      "money": 113551523.60000001,
+      "maxMoney": 567757618,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "microdyne",
+        "timestamp": 1769505648541
+      },
+      "timestamp": 1769505648541
+    },
+    {
+      "sec": 72,
+      "minSec": 24,
+      "money": 113551523.60000001,
+      "maxMoney": 567757618,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "microdyne",
+        "timestamp": 1769505653558
+      },
+      "timestamp": 1769505653558
+    }
+  ],
+  "helios": [
+    {
+      "sec": 85,
+      "minSec": 28,
+      "money": 126233939,
+      "maxMoney": 631169695,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "helios",
+        "timestamp": 1769505643536
+      },
+      "timestamp": 1769505643536
+    },
+    {
+      "sec": 85,
+      "minSec": 28,
+      "money": 126233939,
+      "maxMoney": 631169695,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "helios",
+        "timestamp": 1769505648541
+      },
+      "timestamp": 1769505648541
+    },
+    {
+      "sec": 85,
+      "minSec": 28,
+      "money": 126233939,
+      "maxMoney": 631169695,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "helios",
+        "timestamp": 1769505653558
+      },
+      "timestamp": 1769505653558
+    }
+  ],
+  "univ-energy": [
+    {
+      "sec": 84,
+      "minSec": 28,
+      "money": 220777732.8,
+      "maxMoney": 1103888664,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "univ-energy",
+        "timestamp": 1769530692999
+      },
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 84,
+      "minSec": 28,
+      "money": 220777732.8,
+      "maxMoney": 1103888664,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "univ-energy",
+        "timestamp": 1769530698004
+      },
+      "timestamp": 1769530698004
+    },
+    {
+      "sec": 84,
+      "minSec": 28,
+      "money": 220777732.8,
+      "maxMoney": 1103888664,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 3744,
+        "weakenThreads": 3744,
+        "prep": true,
+        "target": "univ-energy",
+        "timestamp": 1769530703015
+      },
+      "timestamp": 1769530703015
+    }
+  ],
+  "infocomm": [
+    {
+      "sec": 76,
+      "minSec": 25,
+      "money": 158698155.8,
+      "maxMoney": 793490779,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "infocomm",
+        "timestamp": 1769505643536
+      },
+      "timestamp": 1769505643536
+    },
+    {
+      "sec": 76,
+      "minSec": 25,
+      "money": 158698155.8,
+      "maxMoney": 793490779,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "infocomm",
+        "timestamp": 1769505648541
+      },
+      "timestamp": 1769505648541
+    },
+    {
+      "sec": 76,
+      "minSec": 25,
+      "money": 158698155.8,
+      "maxMoney": 793490779,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "infocomm",
+        "timestamp": 1769505653558
+      },
+      "timestamp": 1769505653558
+    }
+  ],
+  "omnia": [
+    {
+      "sec": 93,
+      "minSec": 31,
+      "money": 183534884.20000002,
+      "maxMoney": 917674421,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "omnia",
+        "timestamp": 1769505643536
+      },
+      "timestamp": 1769505643536
+    },
+    {
+      "sec": 93,
+      "minSec": 31,
+      "money": 183534884.20000002,
+      "maxMoney": 917674421,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "omnia",
+        "timestamp": 1769505648541
+      },
+      "timestamp": 1769505648541
+    },
+    {
+      "sec": 93,
+      "minSec": 31,
+      "money": 183534884.20000002,
+      "maxMoney": 917674421,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "omnia",
+        "timestamp": 1769505653558
+      },
+      "timestamp": 1769505653558
+    }
+  ],
+  "stormtech": [
+    {
+      "sec": 86,
+      "minSec": 29,
+      "money": 235976760.4,
+      "maxMoney": 1179883802,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "stormtech",
+        "timestamp": 1769505643536
+      },
+      "timestamp": 1769505643536
+    },
+    {
+      "sec": 86,
+      "minSec": 29,
+      "money": 235976760.4,
+      "maxMoney": 1179883802,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "stormtech",
+        "timestamp": 1769505648541
+      },
+      "timestamp": 1769505648541
+    },
+    {
+      "sec": 86,
+      "minSec": 29,
+      "money": 235976760.4,
+      "maxMoney": 1179883802,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "stormtech",
+        "timestamp": 1769505653558
+      },
+      "timestamp": 1769505653558
+    }
+  ],
+  "taiyang-digital": [
+    {
+      "sec": 74,
+      "minSec": 25,
+      "money": 163749770.4,
+      "maxMoney": 818748852,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "taiyang-digital",
+        "timestamp": 1769505643536
+      },
+      "timestamp": 1769505643536
+    },
+    {
+      "sec": 74,
+      "minSec": 25,
+      "money": 163749770.4,
+      "maxMoney": 818748852,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "taiyang-digital",
+        "timestamp": 1769505648541
+      },
+      "timestamp": 1769505648541
+    },
+    {
+      "sec": 74,
+      "minSec": 25,
+      "money": 163749770.4,
+      "maxMoney": 818748852,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "taiyang-digital",
+        "timestamp": 1769505653558
+      },
+      "timestamp": 1769505653558
+    }
+  ],
+  "kuai-gong": [
+    {
+      "sec": 97,
+      "minSec": 32,
+      "money": 4174044158,
+      "maxMoney": 20870220790,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "kuai-gong",
+        "timestamp": 1769505643536
+      },
+      "timestamp": 1769505643536
+    },
+    {
+      "sec": 97,
+      "minSec": 32,
+      "money": 4174044158,
+      "maxMoney": 20870220790,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "kuai-gong",
+        "timestamp": 1769505648541
+      },
+      "timestamp": 1769505648541
+    },
+    {
+      "sec": 97,
+      "minSec": 32,
+      "money": 4174044158,
+      "maxMoney": 20870220790,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "kuai-gong",
+        "timestamp": 1769505653558
+      },
+      "timestamp": 1769505653558
+    }
+  ],
+  "nwo": [
+    {
+      "sec": 99,
+      "minSec": 33,
+      "money": 7379431020.6,
+      "maxMoney": 36897155103,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "nwo",
+        "timestamp": 1769505643536
+      },
+      "timestamp": 1769505643536
+    },
+    {
+      "sec": 99,
+      "minSec": 33,
+      "money": 7379431020.6,
+      "maxMoney": 36897155103,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "nwo",
+        "timestamp": 1769505648542
+      },
+      "timestamp": 1769505648542
+    },
+    {
+      "sec": 99,
+      "minSec": 33,
+      "money": 7379431020.6,
+      "maxMoney": 36897155103,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "nwo",
+        "timestamp": 1769505653558
+      },
+      "timestamp": 1769505653558
+    }
+  ],
+  "4sigma": [
+    {
+      "sec": 73,
+      "minSec": 24,
+      "money": 3630260109.6000004,
+      "maxMoney": 18151300548,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "4sigma",
+        "timestamp": 1769505643536
+      },
+      "timestamp": 1769505643536
+    },
+    {
+      "sec": 73,
+      "minSec": 24,
+      "money": 3630260109.6000004,
+      "maxMoney": 18151300548,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "4sigma",
+        "timestamp": 1769505648542
+      },
+      "timestamp": 1769505648542
+    },
+    {
+      "sec": 73,
+      "minSec": 24,
+      "money": 3630260109.6000004,
+      "maxMoney": 18151300548,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "4sigma",
+        "timestamp": 1769505653558
+      },
+      "timestamp": 1769505653558
+    }
+  ],
+  "b-and-a": [
+    {
+      "sec": 86,
+      "minSec": 29,
+      "money": 4674671108.2,
+      "maxMoney": 23373355541,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "b-and-a",
+        "timestamp": 1769505643536
+      },
+      "timestamp": 1769505643536
+    },
+    {
+      "sec": 86,
+      "minSec": 29,
+      "money": 4674671108.2,
+      "maxMoney": 23373355541,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "b-and-a",
+        "timestamp": 1769505648542
+      },
+      "timestamp": 1769505648542
+    },
+    {
+      "sec": 86,
+      "minSec": 29,
+      "money": 4674671108.2,
+      "maxMoney": 23373355541,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "b-and-a",
+        "timestamp": 1769505653558
+      },
+      "timestamp": 1769505653558
+    }
+  ],
+  "defcomm": [
+    {
+      "sec": 85,
+      "minSec": 28,
+      "money": 186927557,
+      "maxMoney": 934637785,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "defcomm",
+        "timestamp": 1769505643536
+      },
+      "timestamp": 1769505643536
+    },
+    {
+      "sec": 85,
+      "minSec": 28,
+      "money": 186927557,
+      "maxMoney": 934637785,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "defcomm",
+        "timestamp": 1769505648542
+      },
+      "timestamp": 1769505648542
+    },
+    {
+      "sec": 85,
+      "minSec": 28,
+      "money": 186927557,
+      "maxMoney": 934637785,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "defcomm",
+        "timestamp": 1769505653558
+      },
+      "timestamp": 1769505653558
+    }
+  ],
+  "ecorp": [
+    {
+      "sec": 99,
+      "minSec": 33,
+      "money": 13136616516,
+      "maxMoney": 65683082580,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "ecorp",
+        "timestamp": 1769505643536
+      },
+      "timestamp": 1769505643536
+    },
+    {
+      "sec": 99,
+      "minSec": 33,
+      "money": 13136616516,
+      "maxMoney": 65683082580,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "ecorp",
+        "timestamp": 1769505648542
+      },
+      "timestamp": 1769505648542
+    },
+    {
+      "sec": 99,
+      "minSec": 33,
+      "money": 13136616516,
+      "maxMoney": 65683082580,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "ecorp",
+        "timestamp": 1769505653558
+      },
+      "timestamp": 1769505653558
+    }
+  ],
+  "blade": [
+    {
+      "sec": 96,
+      "minSec": 32,
+      "money": 5830586110.200001,
+      "maxMoney": 29152930551,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "blade",
+        "timestamp": 1769505643536
+      },
+      "timestamp": 1769505643536
+    },
+    {
+      "sec": 96,
+      "minSec": 32,
+      "money": 5830586110.200001,
+      "maxMoney": 29152930551,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "blade",
+        "timestamp": 1769505648542
+      },
+      "timestamp": 1769505648542
+    },
+    {
+      "sec": 96,
+      "minSec": 32,
+      "money": 5830586110.200001,
+      "maxMoney": 29152930551,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "blade",
+        "timestamp": 1769505653558
+      },
+      "timestamp": 1769505653558
+    }
+  ],
+  "omnitek": [
+    {
+      "sec": 95,
+      "minSec": 32,
+      "money": 4052189090.4,
+      "maxMoney": 20260945452,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "omnitek",
+        "timestamp": 1769505643536
+      },
+      "timestamp": 1769505643536
+    },
+    {
+      "sec": 95,
+      "minSec": 32,
+      "money": 4052189090.4,
+      "maxMoney": 20260945452,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "omnitek",
+        "timestamp": 1769505648542
+      },
+      "timestamp": 1769505648542
+    },
+    {
+      "sec": 95,
+      "minSec": 32,
+      "money": 4052189090.4,
+      "maxMoney": 20260945452,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "omnitek",
+        "timestamp": 1769505653558
+      },
+      "timestamp": 1769505653558
+    }
+  ],
+  "powerhouse-fitness": [
+    {
+      "sec": 57,
+      "minSec": 19,
+      "money": 180000000,
+      "maxMoney": 900000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "powerhouse-fitness",
+        "timestamp": 1769505643536
+      },
+      "timestamp": 1769505643536
+    },
+    {
+      "sec": 57,
+      "minSec": 19,
+      "money": 180000000,
+      "maxMoney": 900000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "powerhouse-fitness",
+        "timestamp": 1769505648542
+      },
+      "timestamp": 1769505648542
+    },
+    {
+      "sec": 57,
+      "minSec": 19,
+      "money": 180000000,
+      "maxMoney": 900000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "powerhouse-fitness",
+        "timestamp": 1769505653558
+      },
+      "timestamp": 1769505653558
+    }
+  ],
+  "megacorp": [
+    {
+      "sec": 99,
+      "minSec": 33,
+      "money": 9943810430,
+      "maxMoney": 49719052150,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "megacorp",
+        "timestamp": 1769505643536
+      },
+      "timestamp": 1769505643536
+    },
+    {
+      "sec": 99,
+      "minSec": 33,
+      "money": 9943810430,
+      "maxMoney": 49719052150,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "megacorp",
+        "timestamp": 1769505648542
+      },
+      "timestamp": 1769505648542
+    },
+    {
+      "sec": 99,
+      "minSec": 33,
+      "money": 9943810430,
+      "maxMoney": 49719052150,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "megacorp",
+        "timestamp": 1769505653558
+      },
+      "timestamp": 1769505653558
+    }
+  ],
+  "fulcrumtech": [
+    {
+      "sec": 90,
+      "minSec": 30,
+      "money": 291886617.2,
+      "maxMoney": 1459433086,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "fulcrumtech",
+        "timestamp": 1769505643536
+      },
+      "timestamp": 1769505643536
+    },
+    {
+      "sec": 90,
+      "minSec": 30,
+      "money": 291886617.2,
+      "maxMoney": 1459433086,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "fulcrumtech",
+        "timestamp": 1769505648542
+      },
+      "timestamp": 1769505648542
+    },
+    {
+      "sec": 90,
+      "minSec": 30,
+      "money": 291886617.2,
+      "maxMoney": 1459433086,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "fulcrumtech",
+        "timestamp": 1769505653558
+      },
+      "timestamp": 1769505653558
+    }
+  ],
+  "clarkinc": [
+    {
+      "sec": 45,
+      "minSec": 15,
+      "money": 3962871877,
+      "maxMoney": 19814359385,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "clarkinc",
+        "timestamp": 1769505643536
+      },
+      "timestamp": 1769505643536
+    },
+    {
+      "sec": 45,
+      "minSec": 15,
+      "money": 3962871877,
+      "maxMoney": 19814359385,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "clarkinc",
+        "timestamp": 1769505648542
+      },
+      "timestamp": 1769505648542
+    },
+    {
+      "sec": 45,
+      "minSec": 15,
+      "money": 3962871877,
+      "maxMoney": 19814359385,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "clarkinc",
+        "timestamp": 1769505653558
+      },
+      "timestamp": 1769505653558
+    }
+  ],
+  "fulcrumassets": [
+    {
+      "sec": 99,
+      "minSec": 33,
+      "money": 200000,
+      "maxMoney": 1000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "fulcrumassets",
+        "timestamp": 1769505643536
+      },
+      "timestamp": 1769505643536
+    },
+    {
+      "sec": 99,
+      "minSec": 33,
+      "money": 200000,
+      "maxMoney": 1000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "fulcrumassets",
+        "timestamp": 1769505648542
+      },
+      "timestamp": 1769505648542
+    },
+    {
+      "sec": 99,
+      "minSec": 33,
+      "money": 200000,
+      "maxMoney": 1000000,
+      "contract": {
+        "hackThreads": 0,
+        "growThreads": 936,
+        "weakenThreads": 936,
+        "prep": true,
+        "target": "fulcrumassets",
+        "timestamp": 1769505653558
+      },
+      "timestamp": 1769505653558
+    }
+  ]
+}

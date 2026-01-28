@@ -1,0 +1,1090 @@
+{
+  "joesguns": [
+    {
+      "sec": 5,
+      "minSec": 5,
+      "money": 2500000,
+      "maxMoney": 2500000,
+      "hackThreads": 964,
+      "growThreads": 1404,
+      "weakenThreads": 1404,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 5,
+      "minSec": 5,
+      "money": 2500000,
+      "maxMoney": 2500000,
+      "hackThreads": 964,
+      "growThreads": 1404,
+      "weakenThreads": 1404,
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 5,
+      "minSec": 5,
+      "money": 2500000,
+      "maxMoney": 2500000,
+      "hackThreads": 964,
+      "growThreads": 1404,
+      "weakenThreads": 1404,
+      "timestamp": 1769530703014
+    }
+  ],
+  "foodnstuff": [
+    {
+      "sec": 3,
+      "minSec": 3,
+      "money": 2000000,
+      "maxMoney": 2000000,
+      "hackThreads": 964,
+      "growThreads": 1404,
+      "weakenThreads": 1404,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 3,
+      "minSec": 3,
+      "money": 2000000,
+      "maxMoney": 2000000,
+      "hackThreads": 964,
+      "growThreads": 1404,
+      "weakenThreads": 1404,
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 3,
+      "minSec": 3,
+      "money": 2000000,
+      "maxMoney": 2000000,
+      "hackThreads": 964,
+      "growThreads": 1404,
+      "weakenThreads": 1404,
+      "timestamp": 1769530703014
+    }
+  ],
+  "sigma-cosmetics": [
+    {
+      "sec": 100,
+      "minSec": 3,
+      "money": 1005137.0669076343,
+      "maxMoney": 2300000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 100,
+      "minSec": 3,
+      "money": 1005137.0669076343,
+      "maxMoney": 2300000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 100,
+      "minSec": 3,
+      "money": 1005137.0669076343,
+      "maxMoney": 2300000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703014
+    }
+  ],
+  "nectar-net": [
+    {
+      "sec": 20,
+      "minSec": 7,
+      "money": 550000,
+      "maxMoney": 2750000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 20,
+      "minSec": 7,
+      "money": 550000,
+      "maxMoney": 2750000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 20,
+      "minSec": 7,
+      "money": 550000,
+      "maxMoney": 2750000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703014
+    }
+  ],
+  "hong-fang-tea": [
+    {
+      "sec": 15,
+      "minSec": 5,
+      "money": 600000,
+      "maxMoney": 3000000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 15,
+      "minSec": 5,
+      "money": 600000,
+      "maxMoney": 3000000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 15,
+      "minSec": 5,
+      "money": 600000,
+      "maxMoney": 3000000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703014
+    }
+  ],
+  "harakiri-sushi": [
+    {
+      "sec": 15,
+      "minSec": 5,
+      "money": 800000,
+      "maxMoney": 4000000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 15,
+      "minSec": 5,
+      "money": 800000,
+      "maxMoney": 4000000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 15,
+      "minSec": 5,
+      "money": 800000,
+      "maxMoney": 4000000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703015
+    }
+  ],
+  "neo-net": [
+    {
+      "sec": 25,
+      "minSec": 8,
+      "money": 1000000,
+      "maxMoney": 5000000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 25,
+      "minSec": 8,
+      "money": 1000000,
+      "maxMoney": 5000000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 25,
+      "minSec": 8,
+      "money": 1000000,
+      "maxMoney": 5000000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703015
+    }
+  ],
+  "zer0": [
+    {
+      "sec": 25,
+      "minSec": 8,
+      "money": 1500000,
+      "maxMoney": 7500000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 25,
+      "minSec": 8,
+      "money": 1500000,
+      "maxMoney": 7500000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 25,
+      "minSec": 8,
+      "money": 1500000,
+      "maxMoney": 7500000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703015
+    }
+  ],
+  "max-hardware": [
+    {
+      "sec": 15,
+      "minSec": 5,
+      "money": 2000000,
+      "maxMoney": 10000000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 15,
+      "minSec": 5,
+      "money": 2000000,
+      "maxMoney": 10000000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 15,
+      "minSec": 5,
+      "money": 2000000,
+      "maxMoney": 10000000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703015
+    }
+  ],
+  "iron-gym": [
+    {
+      "sec": 30,
+      "minSec": 10,
+      "money": 4000000,
+      "maxMoney": 20000000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 30,
+      "minSec": 10,
+      "money": 4000000,
+      "maxMoney": 20000000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 30,
+      "minSec": 10,
+      "money": 4000000,
+      "maxMoney": 20000000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703015
+    }
+  ],
+  "phantasy": [
+    {
+      "sec": 20,
+      "minSec": 7,
+      "money": 4800000,
+      "maxMoney": 24000000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 20,
+      "minSec": 7,
+      "money": 4800000,
+      "maxMoney": 24000000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 20,
+      "minSec": 7,
+      "money": 4800000,
+      "maxMoney": 24000000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703015
+    }
+  ],
+  "silver-helix": [
+    {
+      "sec": 30,
+      "minSec": 10,
+      "money": 9000000,
+      "maxMoney": 45000000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 30,
+      "minSec": 10,
+      "money": 9000000,
+      "maxMoney": 45000000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 30,
+      "minSec": 10,
+      "money": 9000000,
+      "maxMoney": 45000000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703015
+    }
+  ],
+  "omega-net": [
+    {
+      "sec": 25,
+      "minSec": 8,
+      "money": 12868847.4,
+      "maxMoney": 64344237,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 25,
+      "minSec": 8,
+      "money": 12868847.4,
+      "maxMoney": 64344237,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 25,
+      "minSec": 8,
+      "money": 12868847.4,
+      "maxMoney": 64344237,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703015
+    }
+  ],
+  "crush-fitness": [
+    {
+      "sec": 38,
+      "minSec": 13,
+      "money": 9262699.4,
+      "maxMoney": 46313497,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 38,
+      "minSec": 13,
+      "money": 9262699.4,
+      "maxMoney": 46313497,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 38,
+      "minSec": 13,
+      "money": 9262699.4,
+      "maxMoney": 46313497,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703015
+    }
+  ],
+  "johnson-ortho": [
+    {
+      "sec": 43,
+      "minSec": 14,
+      "money": 15539770.8,
+      "maxMoney": 77698854,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 43,
+      "minSec": 14,
+      "money": 15539770.8,
+      "maxMoney": 77698854,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 43,
+      "minSec": 14,
+      "money": 15539770.8,
+      "maxMoney": 77698854,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703015
+    }
+  ],
+  "the-hub": [
+    {
+      "sec": 38,
+      "minSec": 13,
+      "money": 37071276.800000004,
+      "maxMoney": 185356384,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 38,
+      "minSec": 13,
+      "money": 37071276.800000004,
+      "maxMoney": 185356384,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 38,
+      "minSec": 13,
+      "money": 37071276.800000004,
+      "maxMoney": 185356384,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703015
+    }
+  ],
+  "computek": [
+    {
+      "sec": 57,
+      "minSec": 19,
+      "money": 49592557.6,
+      "maxMoney": 247962788,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 57,
+      "minSec": 19,
+      "money": 49592557.6,
+      "maxMoney": 247962788,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 57,
+      "minSec": 19,
+      "money": 49592557.6,
+      "maxMoney": 247962788,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703015
+    }
+  ],
+  "netlink": [
+    {
+      "sec": 62,
+      "minSec": 21,
+      "money": 55000000,
+      "maxMoney": 275000000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 62,
+      "minSec": 21,
+      "money": 55000000,
+      "maxMoney": 275000000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 62,
+      "minSec": 21,
+      "money": 55000000,
+      "maxMoney": 275000000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703015
+    }
+  ],
+  "rothman-uni": [
+    {
+      "sec": 53,
+      "minSec": 18,
+      "money": 39895156.800000004,
+      "maxMoney": 199475784,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 53,
+      "minSec": 18,
+      "money": 39895156.800000004,
+      "maxMoney": 199475784,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 53,
+      "minSec": 18,
+      "money": 39895156.800000004,
+      "maxMoney": 199475784,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703015
+    }
+  ],
+  "catalyst": [
+    {
+      "sec": 62,
+      "minSec": 21,
+      "money": 81130746.60000001,
+      "maxMoney": 405653733,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 62,
+      "minSec": 21,
+      "money": 81130746.60000001,
+      "maxMoney": 405653733,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 62,
+      "minSec": 21,
+      "money": 81130746.60000001,
+      "maxMoney": 405653733,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703015
+    }
+  ],
+  "aevum-police": [
+    {
+      "sec": 74,
+      "minSec": 25,
+      "money": 67221065.2,
+      "maxMoney": 336105326,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 74,
+      "minSec": 25,
+      "money": 67221065.2,
+      "maxMoney": 336105326,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698003
+    },
+    {
+      "sec": 74,
+      "minSec": 25,
+      "money": 67221065.2,
+      "maxMoney": 336105326,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703015
+    }
+  ],
+  "summit-uni": [
+    {
+      "sec": 55,
+      "minSec": 18,
+      "money": 49286117.800000004,
+      "maxMoney": 246430589,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 55,
+      "minSec": 18,
+      "money": 49286117.800000004,
+      "maxMoney": 246430589,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698004
+    },
+    {
+      "sec": 55,
+      "minSec": 18,
+      "money": 49286117.800000004,
+      "maxMoney": 246430589,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703015
+    }
+  ],
+  "millenium-fitness": [
+    {
+      "sec": 54,
+      "minSec": 18,
+      "money": 50000000,
+      "maxMoney": 250000000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 54,
+      "minSec": 18,
+      "money": 50000000,
+      "maxMoney": 250000000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698004
+    },
+    {
+      "sec": 54,
+      "minSec": 18,
+      "money": 50000000,
+      "maxMoney": 250000000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703015
+    }
+  ],
+  "rho-construction": [
+    {
+      "sec": 57,
+      "minSec": 19,
+      "money": 112071094.80000001,
+      "maxMoney": 560355474,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 57,
+      "minSec": 19,
+      "money": 112071094.80000001,
+      "maxMoney": 560355474,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698004
+    },
+    {
+      "sec": 57,
+      "minSec": 19,
+      "money": 112071094.80000001,
+      "maxMoney": 560355474,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703015
+    }
+  ],
+  "alpha-ent": [
+    {
+      "sec": 62,
+      "minSec": 21,
+      "money": 144193895.8,
+      "maxMoney": 720969479,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 62,
+      "minSec": 21,
+      "money": 144193895.8,
+      "maxMoney": 720969479,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698004
+    },
+    {
+      "sec": 62,
+      "minSec": 21,
+      "money": 144193895.8,
+      "maxMoney": 720969479,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703015
+    }
+  ],
+  "syscore": [
+    {
+      "sec": 76,
+      "minSec": 25,
+      "money": 113964512.60000001,
+      "maxMoney": 569822563,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 76,
+      "minSec": 25,
+      "money": 113964512.60000001,
+      "maxMoney": 569822563,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698004
+    },
+    {
+      "sec": 76,
+      "minSec": 25,
+      "money": 113964512.60000001,
+      "maxMoney": 569822563,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703015
+    }
+  ],
+  "lexo-corp": [
+    {
+      "sec": 70,
+      "minSec": 23,
+      "money": 159988912.8,
+      "maxMoney": 799944564,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 70,
+      "minSec": 23,
+      "money": 159988912.8,
+      "maxMoney": 799944564,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698004
+    },
+    {
+      "sec": 70,
+      "minSec": 23,
+      "money": 159988912.8,
+      "maxMoney": 799944564,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703015
+    }
+  ],
+  "unitalife": [
+    {
+      "sec": 76,
+      "minSec": 25,
+      "money": 203761253,
+      "maxMoney": 1018806265,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 76,
+      "minSec": 25,
+      "money": 203761253,
+      "maxMoney": 1018806265,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698004
+    },
+    {
+      "sec": 76,
+      "minSec": 25,
+      "money": 203761253,
+      "maxMoney": 1018806265,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703015
+    }
+  ],
+  "snap-fitness": [
+    {
+      "sec": 57,
+      "minSec": 19,
+      "money": 90000000,
+      "maxMoney": 450000000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 57,
+      "minSec": 19,
+      "money": 90000000,
+      "maxMoney": 450000000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698004
+    },
+    {
+      "sec": 57,
+      "minSec": 19,
+      "money": 90000000,
+      "maxMoney": 450000000,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703015
+    }
+  ],
+  "global-pharm": [
+    {
+      "sec": 80,
+      "minSec": 27,
+      "money": 306970317.8,
+      "maxMoney": 1534851589,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 80,
+      "minSec": 27,
+      "money": 306970317.8,
+      "maxMoney": 1534851589,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698004
+    },
+    {
+      "sec": 80,
+      "minSec": 27,
+      "money": 306970317.8,
+      "maxMoney": 1534851589,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703015
+    }
+  ],
+  "applied-energetics": [
+    {
+      "sec": 65,
+      "minSec": 22,
+      "money": 169703316.8,
+      "maxMoney": 848516584,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 65,
+      "minSec": 22,
+      "money": 169703316.8,
+      "maxMoney": 848516584,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698004
+    },
+    {
+      "sec": 65,
+      "minSec": 22,
+      "money": 169703316.8,
+      "maxMoney": 848516584,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703015
+    }
+  ],
+  "zb-def": [
+    {
+      "sec": 59,
+      "minSec": 20,
+      "money": 204954626.60000002,
+      "maxMoney": 1024773133,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 59,
+      "minSec": 20,
+      "money": 204954626.60000002,
+      "maxMoney": 1024773133,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698004
+    },
+    {
+      "sec": 59,
+      "minSec": 20,
+      "money": 204954626.60000002,
+      "maxMoney": 1024773133,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703015
+    }
+  ],
+  "nova-med": [
+    {
+      "sec": 78,
+      "minSec": 26,
+      "money": 225133190,
+      "maxMoney": 1125665950,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 78,
+      "minSec": 26,
+      "money": 225133190,
+      "maxMoney": 1125665950,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698004
+    },
+    {
+      "sec": 78,
+      "minSec": 26,
+      "money": 225133190,
+      "maxMoney": 1125665950,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703015
+    }
+  ],
+  "univ-energy": [
+    {
+      "sec": 84,
+      "minSec": 28,
+      "money": 220777732.8,
+      "maxMoney": 1103888664,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530692999
+    },
+    {
+      "sec": 84,
+      "minSec": 28,
+      "money": 220777732.8,
+      "maxMoney": 1103888664,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530698004
+    },
+    {
+      "sec": 84,
+      "minSec": 28,
+      "money": 220777732.8,
+      "maxMoney": 1103888664,
+      "hackThreads": 0,
+      "growThreads": 3744,
+      "weakenThreads": 3744,
+      "timestamp": 1769530703015
+    }
+  ]
+}

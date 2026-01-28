@@ -1,0 +1,28 @@
+{
+  "univ-energy": [
+    {
+      "host": "CSEC",
+      "hack": 0,
+      "grow": 0,
+      "weaken": 0,
+      "max": 0,
+      "timestamp": 1769509454897
+    },
+    {
+      "host": "foodnstuff",
+      "hack": 0,
+      "grow": 0,
+      "weaken": 0,
+      "max": 0,
+      "timestamp": 1769509454897
+    },
+    {
+      "host": "n00dles",
+      "hack": 0,
+      "grow": 0,
+      "weaken": 0,
+      "max": 0,
+      "timestamp": 1769509454897
+    }
+  ]
+}
