@@ -1,160 +1,204 @@
-/** @param {NS} ns **/
+// /standalone/mk0/deployer.js
+// Version: v0.7
+// Dependencies: None (inline PID/knapsack)
+// Merged Change: Expanded getServers recursive full (fix home only); Targets check/create if missing; PID call before batcher req; Logging (Conv2 append/rotate); ES6+ guards/arrows; Doc: Multi-target loop. Optimized: Density sort, home boost. Resilient: Skip 0/neg, try-catch. Func: Re-deploys on free.
+
+/** @param {NS} ns */
 export async function main(ns) {
-    ns.disableLog("ALL");
+  ns.disableLog('ALL');
+  const sleepTime = 10000;
+  let pidState = {};  // PID persist
 
-    const configPath = "/standalone/mk0/deployer-config.json";
-    const planPath = "/standalone/mk0/batcher-contracts.json";
-    const workerScripts = {
-        hack: "/standalone/mk0/hack-worker.js",
-        grow: "/standalone/mk0/grow-worker.js",
-        weaken: "/standalone/mk0/weaken-worker.js"
-    };
-    const n00dles = "n00dles";
-    const loop = !ns.args.includes("once");
+  while (true) {
+    try {
+      let targets = ns.read('/data/targets.txt').split('\n').filter(t => t);
+      if (!targets.length) {  // Check/create
+        ns.print('[WARN] Targets.txt missing—creating default XP focus');
+        const defaultTargets = ['n00dles', 'foodnstuff', 'joesguns'];  // Low req asc
+        ns.write('/data/targets.txt', defaultTargets.join('\n'), 'w');
+        targets = defaultTargets;
+      }
 
-    function loadJson(path, def) {
-        if (!ns.fileExists(path)) return def;
-        try { return JSON.parse(ns.read(path)); } catch { return def; }
+      const servers = getServers(ns);  // Full recursive
+      const rams = {hack: 1.7, grow: 1.75, weaken: 1.75};
+      const density = {weaken: 1.2, grow: 1.0, hack: 0.8};
+
+      let leftover = new Map(servers.map(s => [s, ns.getServerMaxRam(s) - ns.getServerUsedRam(s)]));
+
+      for (const target of targets) {
+        const server = ns.getServer(target);
+        const pidAdj = pidController(ns, server, pidState);  // PID
+        pidState = pidAdj.state;
+
+        const req = estimateThreads(ns, target, pidAdj);  // Batcher + PID
+        if (req.hack + req.grow + req.weaken <= 0) continue;
+
+        const alloc = knapsack(leftover, rams, req, density, ns);
+        deploy(ns, alloc, target);
+        updateLeftover(leftover, alloc, rams);
+      }
+
+      // Leftover n00dles weaken
+      const totalLeft = Array.from(leftover.values()).reduce((a, b) => a + b, 0);
+      if (totalLeft > rams.weaken) {
+        const nReq = {weaken: Math.floor(totalLeft / rams.weaken)};
+        const nAlloc = knapsack(leftover, rams, nReq, density, ns);
+        deploy(ns, nAlloc, 'n00dles');
+      }
+
+      logPid(ns, pidState);  // Conv2 log
+      ns.tprint('[MK0 DEPLOY v0.7] Batch complete—re-checking in 10s');
+    } catch (e) {
+      ns.print(`[ERROR] Deploy fail: ${e}`);
     }
-    function scanAll() {
-        const visited = new Set();
-        const stack = ["home"];
-        const servers = [];
-        while (stack.length > 0) {
-            const host = stack.pop();
-            if (!visited.has(host)) {
-                visited.add(host);
-                servers.push(host);
-                for (const neighbor of ns.scan(host)) {
-                    if (!visited.has(neighbor)) stack.push(neighbor);
-                }
-            }
-        }
-        return servers;
+    await ns.sleep(sleepTime);
+  }
+}
+
+// Servers: Recursive full (fix home only)
+function getServers(ns) {
+  const visited = new Set(['home']);
+  const stack = ns.scan('home');
+  const servers = [];
+
+  while (stack.length) {
+    const srv = stack.pop();
+    if (visited.has(srv)) continue;
+    visited.add(srv);
+    stack.push(...ns.scan(srv));
+
+    if (ns.hasRootAccess(srv) && ns.getServerMaxRam(srv) > 0) servers.push(srv);
+  }
+
+  // Sort: Network → recent p-serv → home
+  const network = servers.filter(s => !s.startsWith('pserv') && s !== 'home');
+  const pservs = servers.filter(s => s.startsWith('pserv')).sort((a, b) => parseInt(b.split('-')[1]) - parseInt(a.split('-')[1]));
+  return [...network, ...pservs, 'home'];
+}
+
+// Heuristic + PID mult + prep
+function estimateThreads(ns, target, pidAdj) {
+  const moneyMax = ns.getServerMaxMoney(target);
+  if (moneyMax <= 0) return {hack: 0, grow: 0, weaken: 0};
+
+  const minSec = ns.getServerMinSecurityLevel(target);
+  const curMoney = ns.getServerMoneyAvailable(target);
+  const curSec = ns.getServerSecurityLevel(target);
+  const moneyThresh = 0.9 * moneyMax;
+  const secThresh = 1.05 * minSec;
+
+  if (curMoney < moneyThresh || curSec > secThresh) {  // Prep if out-range
+    const weakT = Math.ceil((curSec - minSec) / ns.weakenAnalyze(1));
+    const growT = Math.ceil(ns.growthAnalyze(target, moneyMax / Math.max(1, curMoney)));
+    return {hack: 0, grow: growT, weaken: weakT};
+  }
+
+  // Normal HWGW
+  const hackFrac = 0.1;
+  const hackT = Math.ceil(hackFrac / ns.hackAnalyze(target)) || 1;
+  const post = moneyMax * (1 - hackFrac);
+  const growT = Math.ceil(ns.growthAnalyze(target, moneyMax / post)) || 1;
+  const secH = ns.hackAnalyzeSecurity(hackT);
+  const secG = ns.growthAnalyzeSecurity(growT);
+  const weakPer = ns.weakenAnalyze(1);
+  return {
+    hack: Math.max(1, hackT * pidAdj.hackMult),
+    grow: Math.max(1, growT * pidAdj.growMult),
+    weaken: Math.max(1, Math.ceil((secH + secG) / weakPer) * pidAdj.weakenMult)
+  };
+}
+
+// Knapsack: Home boost
+function knapsack(leftover, rams, req, density, ns) {
+  const alloc = {};
+  const types = ['weaken', 'grow', 'hack'].sort((a, b) => density[b] - density[a]);
+  for (const srv of Array.from(leftover.keys()).sort((a, b) => leftover.get(b) - leftover.get(a))) {
+    alloc[srv] = {hack: 0, grow: 0, weaken: 0};
+    let rem = leftover.get(srv);
+    const isHome = srv === 'home';
+    const cores = isHome ? ns.getServer(srv).cpuCores : 1;
+    const coresFactor = cores > 1 ? 1.2 : 1;
+
+    for (const type of types) {
+      if (req[type] <= 0) continue;
+      const typeDensity = density[type] * (['weaken', 'grow'].includes(type) && isHome ? coresFactor : 1);
+      const ramPer = rams[type];
+      if (rem < ramPer) continue;
+
+      const base = Math.min(req[type], Math.floor(rem / ramPer));
+      alloc[srv][type] += base;
+      rem -= base * ramPer;
+      req[type] -= base;
+
+      if (rem >= ramPer && req[type] > 0) {
+        const scale = Math.min(2, Math.floor(rem / ramPer), req[type]);
+        alloc[srv][type] += scale;
+        rem -= scale * ramPer;
+        req[type] -= scale;
+      }
     }
-    function getAvailablePortOpeners() {
-        let count = 0;
-        if (ns.fileExists("BruteSSH.exe", "home")) count++;
-        if (ns.fileExists("FTPCrack.exe", "home")) count++;
-        if (ns.fileExists("relaySMTP.exe", "home")) count++;
-        if (ns.fileExists("HTTPWorm.exe", "home")) count++;
-        if (ns.fileExists("SQLInject.exe", "home")) count++;
-        return count;
-    }
+  }
+  return alloc;
+}
 
-    do {
-        let ramReserve = 0;
-        if (ns.fileExists(configPath)) {
-            try {
-                const cfg = JSON.parse(ns.read(configPath));
-                ramReserve = Number(cfg.ramReserve) || 0;
-            } catch { ramReserve = 0; }
-        }
+// Deploy >0
+function deploy(ns, alloc, target) {
+  for (const [srv, t] of Object.entries(alloc)) {
+    if (t.hack > 0) ns.exec('/standalone/mk0/worker-hack.js', srv, t.hack, target);
+    if (t.grow > 0) ns.exec('/standalone/mk0/worker-grow.js', srv, t.grow, target);
+    if (t.weaken > 0) ns.exec('/standalone/mk0/worker-weaken.js', srv, t.weaken, target);
+  }
+}
 
-        // Scan servers and sort: network servers, p-servs, home last
-        const servers = scanAll();
-        const rooted = servers.filter(s => ns.hasRootAccess(s) && ns.getServerMaxRam(s) > 0);
-        const pservs = rooted.filter(s => s.startsWith("pserv-")).sort((a, b) => {
-            const na = parseInt(a.replace("pserv-", "")), nb = parseInt(b.replace("pserv-", ""));
-            return nb - na;
-        });
-        const network = rooted.filter(s => !s.startsWith("pserv-") && s !== "home");
-        const ordered = [...network, ...pservs, "home"];
+// Update
+function updateLeftover(leftover, alloc, rams) {
+  for (const [srv, t] of Object.entries(alloc)) {
+    const used = t.hack * rams.hack + t.grow * rams.grow + t.weaken * rams.weaken;
+    leftover.set(srv, leftover.get(srv) - used);
+  }
+}
 
-        // Notify player if any hackable but unrooted servers with RAM > 0
-        const player = ns.getPlayer();
-        const portOpeners = getAvailablePortOpeners();
-        const hackableUnrooted = servers.filter(s =>
-            !ns.hasRootAccess(s) &&
-            ns.getServerMaxRam(s) > 0 &&
-            ns.getServerRequiredHackingLevel(s) <= player.hacking &&
-            ns.getServerNumPortsRequired(s) <= portOpeners
-        );
-        if (hackableUnrooted.length > 0) {
-            ns.tprint("Deployer: The following servers are hackable but not rooted (with RAM > 0):");
-            hackableUnrooted.forEach(s => ns.tprint("  - " + s));
-        }
+// PID (adaptive, multi-var)
+function pidController(ns, server, prev = {errorSec: 0, integralSec: 0, errorMoney: 0, integralMoney: 0, errorPrevSec: 0, errorPrevMoney: 0}) {
+  const minSec = server.minDifficulty;
+  const maxMoney = server.moneyMax;
+  const curSec = server.hackDifficulty;
+  const curMoney = server.moneyAvailable;
 
-        // Load contracts
-        const contracts = loadJson(planPath, {});
-        let availableContracts = [];
-        for (const target in contracts) {
-            if (!contracts[target] || !Array.isArray(contracts[target])) continue;
-            const contract = contracts[target][contracts[target].length - 1];
-            if (!contract) continue;
-            availableContracts.push({
-                target,
-                hack: contract.hackThreads || 0,
-                grow: contract.growThreads || 0,
-                weaken: contract.weakenThreads || 0
-            });
-        }
+  let kp = 0.5, ki = 0.1, kd = 0.2;  // Adaptive: High sec kp *1.2
+  if (curSec > minSec * 1.5) kp *= 1.2;
 
-        // Get worker RAM costs (check on home)
-        const hackRam = ns.getScriptRam(workerScripts.hack, "home");
-        const growRam = ns.getScriptRam(workerScripts.grow, "home");
-        const weakenRam = ns.getScriptRam(workerScripts.weaken, "home");
+  // Sec PID
+  const errorSec = (curSec - minSec * 1.05) / minSec;
+  const derivSec = errorSec - prev.errorPrevSec;
+  prev.integralSec += errorSec;
+  prev.integralSec = Math.max(-10, Math.min(10, prev.integralSec));
 
-        // Deploy contract-by-contract, server-by-server, maximizing RAM utilization (thread packing)
-        let contractAlloc = {};
-        for (const c of availableContracts) contractAlloc[c.target] = { hack: 0, grow: 0, weaken: 0 };
+  const secAdj = kp * errorSec + ki * prev.integralSec + kd * derivSec;
 
-        for (const host of ordered) {
-            if (!rooted.includes(host)) continue;
-            const maxRam = ns.getServerMaxRam(host);
-            const usedRam = ns.getServerUsedRam(host);
-            let freeRam = Math.max(0, maxRam - usedRam - (host === "home" ? ramReserve : 0));
+  // Money PID
+  const errorMoney = (maxMoney * 0.95 - curMoney) / maxMoney;
+  const derivMoney = errorMoney - prev.errorPrevMoney;
+  prev.integralMoney += errorMoney;
+  prev.integralMoney = Math.max(-10, Math.min(10, prev.integralMoney));
 
-            // Copy scripts to remote server if not home
-            for (const script of Object.values(workerScripts)) {
-                if (host !== "home" && !ns.fileExists(script, host)) {
-                    await ns.scp(script, "home", host);
-                }
-            }
+  const moneyAdj = kp * errorMoney + ki * prev.integralMoney + kd * derivMoney;
 
-            // For each contract, try to fill hack, grow, weaken in order, maximizing RAM usage
-            for (const contract of availableContracts) {
-                // Matrix solution: Try all combinations of (w, g, h) that fit in freeRam and fill contract
-                let neededW = contract.weaken - contractAlloc[contract.target].weaken;
-                let neededG = contract.grow - contractAlloc[contract.target].grow;
-                let neededH = contract.hack - contractAlloc[contract.target].hack;
-                if (neededW < 0) neededW = 0;
-                if (neededG < 0) neededG = 0;
-                if (neededH < 0) neededH = 0;
+  return {
+    hackMult: 1 - secAdj * 0.5,
+    growMult: 1 + moneyAdj,
+    weakenMult: 1 + secAdj,
+    state: {errorSec, integralSec: prev.integralSec, errorMoney, integralMoney: prev.integralMoney, errorPrevSec: errorSec, errorPrevMoney: errorMoney}
+  };
+}
 
-                // Try to fill as much as possible, prioritizing weaken > grow > hack
-                let w = Math.min(neededW, Math.floor(freeRam / weakenRam));
-                freeRam -= w * weakenRam;
-                contractAlloc[contract.target].weaken += w;
+// Log PID (Conv2 minimal—append, rotate >1000)
+function logPid(ns, state) {
+  const logPath = '/logs/pid-tune.txt';
+  const entry = {ts: Date.now(), state};
+  ns.write(logPath, JSON.stringify(entry) + '\n', 'a');
 
-                let g = Math.min(neededG, Math.floor(freeRam / growRam));
-                freeRam -= g * growRam;
-                contractAlloc[contract.target].grow += g;
-
-                let h = Math.min(neededH, Math.floor(freeRam / hackRam));
-                freeRam -= h * hackRam;
-                contractAlloc[contract.target].hack += h;
-
-                if (w > 0) ns.exec(workerScripts.weaken, host, w, contract.target);
-                if (g > 0) ns.exec(workerScripts.grow, host, g, contract.target);
-                if (h > 0) ns.exec(workerScripts.hack, host, h, contract.target);
-            }
-
-            // If no contracts or leftover RAM, fill with n00dles
-            if (freeRam > 0) {
-                if (weakenRam > 0 && ns.getServerSecurityLevel(n00dles) > ns.getServerMinSecurityLevel(n00dles)) {
-                    let threads = Math.floor(freeRam / weakenRam);
-                    if (threads > 0 && Number.isFinite(threads)) ns.exec(workerScripts.weaken, host, threads, n00dles);
-                } else if (growRam > 0 && ns.getServerMoneyAvailable(n00dles) < ns.getServerMaxMoney(n00dles) * 0.9) {
-                    let threads = Math.floor(freeRam / growRam);
-                    if (threads > 0 && Number.isFinite(threads)) ns.exec(workerScripts.grow, host, threads, n00dles);
-                } else if (hackRam > 0) {
-                    let threads = Math.floor(freeRam / hackRam);
-                    if (threads > 0 && Number.isFinite(threads)) ns.exec(workerScripts.hack, host, threads, n00dles);
-                }
-            }
-        }
-
-        if (loop) await ns.sleep(5000);
-    } while (loop);
+  // Rotate (Conv2 style—clear if >1000)
+  const lines = ns.read(logPath).split('\n').length;
+  if (lines > 1000) ns.write(logPath, '', 'w');
 }

@@ -86,352 +86,352 @@
   {
     "name": "omega-net",
     "ram": 32,
-    "minSec": 8,
-    "maxMoney": 64344237,
-    "hackReq": 192
-  },
-  {
-    "name": "crush-fitness",
-    "ram": 0,
-    "minSec": 13,
-    "maxMoney": 46313497,
-    "hackReq": 227
+    "minSec": 9,
+    "maxMoney": 64400911,
+    "hackReq": 181
   },
   {
     "name": "johnson-ortho",
     "ram": 0,
-    "minSec": 14,
-    "maxMoney": 77698854,
-    "hackReq": 270
+    "minSec": 17,
+    "maxMoney": 84046083,
+    "hackReq": 256
+  },
+  {
+    "name": "crush-fitness",
+    "ram": 0,
+    "minSec": 12,
+    "maxMoney": 47504124,
+    "hackReq": 266
   },
   {
     "name": "the-hub",
-    "ram": 8,
-    "minSec": 13,
-    "maxMoney": 185356384,
-    "hackReq": 313
+    "ram": 32,
+    "minSec": 12,
+    "maxMoney": 160676710,
+    "hackReq": 322
+  },
+  {
+    "name": "rothman-uni",
+    "ram": 64,
+    "minSec": 15,
+    "maxMoney": 189043532,
+    "hackReq": 388
   },
   {
     "name": "computek",
     "ram": 0,
     "minSec": 19,
-    "maxMoney": 247962788,
-    "hackReq": 315
-  },
-  {
-    "name": "netlink",
-    "ram": 32,
-    "minSec": 21,
-    "maxMoney": 275000000,
-    "hackReq": 376
-  },
-  {
-    "name": "rothman-uni",
-    "ram": 64,
-    "minSec": 18,
-    "maxMoney": 199475784,
-    "hackReq": 399
-  },
-  {
-    "name": "catalyst",
-    "ram": 64,
-    "minSec": 21,
-    "maxMoney": 405653733,
-    "hackReq": 406
+    "maxMoney": 236021475,
+    "hackReq": 397
   },
   {
     "name": "aevum-police",
     "ram": 64,
-    "minSec": 25,
-    "maxMoney": 336105326,
-    "hackReq": 421
+    "minSec": 24,
+    "maxMoney": 290074793,
+    "hackReq": 403
+  },
+  {
+    "name": "netlink",
+    "ram": 32,
+    "minSec": 23,
+    "maxMoney": 275000000,
+    "hackReq": 410
+  },
+  {
+    "name": "catalyst",
+    "ram": 128,
+    "minSec": 22,
+    "maxMoney": 374731172,
+    "hackReq": 443
   },
   {
     "name": "summit-uni",
-    "ram": 32,
-    "minSec": 18,
-    "maxMoney": 246430589,
-    "hackReq": 436
+    "ram": 64,
+    "minSec": 16,
+    "maxMoney": 309942766,
+    "hackReq": 452
   },
   {
     "name": "millenium-fitness",
     "ram": 16,
-    "minSec": 18,
+    "minSec": 17,
     "maxMoney": 250000000,
-    "hackReq": 499
+    "hackReq": 495
   },
   {
     "name": "rho-construction",
     "ram": 32,
-    "minSec": 19,
-    "maxMoney": 560355474,
-    "hackReq": 504
+    "minSec": 16,
+    "maxMoney": 537992551,
+    "hackReq": 512
   },
   {
     "name": "alpha-ent",
-    "ram": 128,
-    "minSec": 21,
-    "maxMoney": 720969479,
-    "hackReq": 562
+    "ram": 32,
+    "minSec": 23,
+    "maxMoney": 651083382,
+    "hackReq": 566
   },
   {
     "name": "syscore",
     "ram": 0,
-    "minSec": 25,
-    "maxMoney": 569822563,
-    "hackReq": 582
-  },
-  {
-    "name": "zb-institute",
-    "ram": 64,
-    "minSec": 22,
-    "maxMoney": 1028569929,
-    "hackReq": 736
-  },
-  {
-    "name": "lexo-corp",
-    "ram": 128,
-    "minSec": 23,
-    "maxMoney": 799944564,
-    "hackReq": 745
-  },
-  {
-    "name": "solaris",
-    "ram": 16,
-    "minSec": 25,
-    "maxMoney": 742641986,
-    "hackReq": 757
-  },
-  {
-    "name": "unitalife",
-    "ram": 32,
-    "minSec": 25,
-    "maxMoney": 1018806265,
-    "hackReq": 788
+    "minSec": 20,
+    "maxMoney": 420276705,
+    "hackReq": 580
   },
   {
     "name": "snap-fitness",
     "ram": 0,
-    "minSec": 19,
+    "minSec": 17,
     "maxMoney": 450000000,
-    "hackReq": 791
+    "hackReq": 696
   },
   {
-    "name": "global-pharm",
-    "ram": 8,
-    "minSec": 27,
-    "maxMoney": 1534851589,
-    "hackReq": 807
+    "name": "lexo-corp",
+    "ram": 128,
+    "minSec": 24,
+    "maxMoney": 705379012,
+    "hackReq": 740
   },
   {
-    "name": "applied-energetics",
-    "ram": 0,
+    "name": "zb-institute",
+    "ram": 16,
     "minSec": 22,
-    "maxMoney": 848516584,
-    "hackReq": 810
+    "maxMoney": 866747452,
+    "hackReq": 748
   },
   {
-    "name": "zb-def",
-    "ram": 0,
-    "minSec": 20,
-    "maxMoney": 1024773133,
-    "hackReq": 813
+    "name": "solaris",
+    "ram": 32,
+    "minSec": 26,
+    "maxMoney": 855322938,
+    "hackReq": 780
+  },
+  {
+    "name": "vitalife",
+    "ram": 16,
+    "minSec": 30,
+    "maxMoney": 776609819,
+    "hackReq": 796
   },
   {
     "name": "nova-med",
     "ram": 0,
     "minSec": 26,
-    "maxMoney": 1125665950,
-    "hackReq": 828
+    "maxMoney": 1103067193,
+    "hackReq": 805
   },
   {
-    "name": "deltaone",
-    "ram": 0,
-    "minSec": 25,
-    "maxMoney": 1375258488,
-    "hackReq": 843
+    "name": "unitalife",
+    "ram": 16,
+    "minSec": 26,
+    "maxMoney": 1048047231,
+    "hackReq": 814
   },
   {
-    "name": "galactic-cyber",
+    "name": "microdyne",
+    "ram": 16,
+    "minSec": 22,
+    "maxMoney": 509300978,
+    "hackReq": 821
+  },
+  {
+    "name": "zb-def",
     "ram": 0,
     "minSec": 19,
-    "maxMoney": 802428814,
-    "hackReq": 847
+    "maxMoney": 1064406270,
+    "hackReq": 822
+  },
+  {
+    "name": "titan-labs",
+    "ram": 16,
+    "minSec": 24,
+    "maxMoney": 833910347,
+    "hackReq": 833
+  },
+  {
+    "name": "applied-energetics",
+    "ram": 0,
+    "minSec": 24,
+    "maxMoney": 794349673,
+    "hackReq": 835
+  },
+  {
+    "name": "univ-energy",
+    "ram": 128,
+    "minSec": 27,
+    "maxMoney": 1173963075,
+    "hackReq": 836
   },
   {
     "name": "zeus-med",
     "ram": 0,
-    "minSec": 28,
-    "maxMoney": 1466164417,
-    "hackReq": 849
+    "minSec": 23,
+    "maxMoney": 1373345464,
+    "hackReq": 844
+  },
+  {
+    "name": "galactic-cyber",
+    "ram": 0,
+    "minSec": 20,
+    "maxMoney": 825280381,
+    "hackReq": 844
+  },
+  {
+    "name": "global-pharm",
+    "ram": 16,
+    "minSec": 27,
+    "maxMoney": 1595504531,
+    "hackReq": 848
+  },
+  {
+    "name": "taiyang-digital",
+    "ram": 0,
+    "minSec": 24,
+    "maxMoney": 869576704,
+    "hackReq": 860
   },
   {
     "name": "aerocorp",
     "ram": 0,
-    "minSec": 28,
-    "maxMoney": 1088523665,
-    "hackReq": 853
-  },
-  {
-    "name": "vitalife",
-    "ram": 64,
-    "minSec": 30,
-    "maxMoney": 768010065,
-    "hackReq": 859
-  },
-  {
-    "name": "titan-labs",
-    "ram": 128,
-    "minSec": 26,
-    "maxMoney": 776820435,
-    "hackReq": 867
-  },
-  {
-    "name": "icarus",
-    "ram": 0,
     "minSec": 29,
-    "maxMoney": 923900804,
-    "hackReq": 867
+    "maxMoney": 1073049119,
+    "hackReq": 872
   },
   {
-    "name": "microdyne",
-    "ram": 32,
-    "minSec": 24,
-    "maxMoney": 567757618,
-    "hackReq": 875
+    "name": "deltaone",
+    "ram": 0,
+    "minSec": 27,
+    "maxMoney": 1515570134,
+    "hackReq": 874
   },
   {
     "name": "helios",
-    "ram": 128,
+    "ram": 256,
     "minSec": 28,
-    "maxMoney": 631169695,
-    "hackReq": 875
+    "maxMoney": 588951584,
+    "hackReq": 887
   },
   {
-    "name": "univ-energy",
+    "name": "omnia",
     "ram": 64,
-    "minSec": 28,
-    "maxMoney": 1103888664,
-    "hackReq": 888
+    "minSec": 30,
+    "maxMoney": 911357941,
+    "hackReq": 889
+  },
+  {
+    "name": "defcomm",
+    "ram": 0,
+    "minSec": 31,
+    "maxMoney": 910860659,
+    "hackReq": 890
   },
   {
     "name": "infocomm",
     "ram": 0,
-    "minSec": 25,
-    "maxMoney": 793490779,
-    "hackReq": 911
-  },
-  {
-    "name": "omnia",
-    "ram": 16,
-    "minSec": 31,
-    "maxMoney": 917674421,
-    "hackReq": 929
+    "minSec": 28,
+    "maxMoney": 870782095,
+    "hackReq": 908
   },
   {
     "name": "stormtech",
     "ram": 0,
     "minSec": 29,
-    "maxMoney": 1179883802,
-    "hackReq": 944
+    "maxMoney": 1149627358,
+    "hackReq": 915
   },
   {
-    "name": "taiyang-digital",
-    "ram": 0,
-    "minSec": 25,
-    "maxMoney": 818748852,
-    "hackReq": 950
-  },
-  {
-    "name": "kuai-gong",
+    "name": "icarus",
     "ram": 0,
     "minSec": 32,
-    "maxMoney": 20870220790,
-    "hackReq": 964
+    "maxMoney": 981145406,
+    "hackReq": 919
   },
   {
-    "name": "nwo",
-    "ram": 0,
-    "minSec": 33,
-    "maxMoney": 36897155103,
-    "hackReq": 971
-  },
-  {
-    "name": "4sigma",
-    "ram": 0,
-    "minSec": 24,
-    "maxMoney": 18151300548,
-    "hackReq": 991
+    "name": "blade",
+    "ram": 256,
+    "minSec": 31,
+    "maxMoney": 12475053818,
+    "hackReq": 1010
   },
   {
     "name": "b-and-a",
     "ram": 0,
-    "minSec": 29,
-    "maxMoney": 23373355541,
-    "hackReq": 1030
-  },
-  {
-    "name": "defcomm",
-    "ram": 0,
-    "minSec": 28,
-    "maxMoney": 934637785,
-    "hackReq": 1031
-  },
-  {
-    "name": "ecorp",
-    "ram": 0,
-    "minSec": 33,
-    "maxMoney": 65683082580,
-    "hackReq": 1057
-  },
-  {
-    "name": "blade",
-    "ram": 512,
-    "minSec": 32,
-    "maxMoney": 29152930551,
-    "hackReq": 1091
-  },
-  {
-    "name": "omnitek",
-    "ram": 512,
-    "minSec": 32,
-    "maxMoney": 20260945452,
-    "hackReq": 1098
+    "minSec": 27,
+    "maxMoney": 15144825184,
+    "hackReq": 1014
   },
   {
     "name": "powerhouse-fitness",
-    "ram": 32,
+    "ram": 16,
     "minSec": 19,
     "maxMoney": 900000000,
-    "hackReq": 1100
+    "hackReq": 1030
+  },
+  {
+    "name": "omnitek",
+    "ram": 128,
+    "minSec": 32,
+    "maxMoney": 17729763429,
+    "hackReq": 1053
+  },
+  {
+    "name": "4sigma",
+    "ram": 0,
+    "minSec": 19,
+    "maxMoney": 18115875142,
+    "hackReq": 1087
+  },
+  {
+    "name": "kuai-gong",
+    "ram": 0,
+    "minSec": 33,
+    "maxMoney": 21303544177,
+    "hackReq": 1110
+  },
+  {
+    "name": "fulcrumtech",
+    "ram": 2048,
+    "minSec": 31,
+    "maxMoney": 1547094396,
+    "hackReq": 1129
   },
   {
     "name": "megacorp",
     "ram": 0,
     "minSec": 33,
-    "maxMoney": 49719052150,
-    "hackReq": 1134
-  },
-  {
-    "name": "fulcrumtech",
-    "ram": 512,
-    "minSec": 30,
-    "maxMoney": 1459433086,
-    "hackReq": 1182
-  },
-  {
-    "name": "clarkinc",
-    "ram": 0,
-    "minSec": 15,
-    "maxMoney": 19814359385,
-    "hackReq": 1189
+    "maxMoney": 40308966662,
+    "hackReq": 1132
   },
   {
     "name": "fulcrumassets",
     "ram": 0,
     "minSec": 33,
     "maxMoney": 1000000,
-    "hackReq": 1457
+    "hackReq": 1181
+  },
+  {
+    "name": "ecorp",
+    "ram": 0,
+    "minSec": 33,
+    "maxMoney": 54492650797,
+    "hackReq": 1182
+  },
+  {
+    "name": "clarkinc",
+    "ram": 0,
+    "minSec": 20,
+    "maxMoney": 23731374546,
+    "hackReq": 1193
+  },
+  {
+    "name": "nwo",
+    "ram": 0,
+    "minSec": 33,
+    "maxMoney": 29336545043,
+    "hackReq": 1241
   },
   {
     "name": "n00dles",
