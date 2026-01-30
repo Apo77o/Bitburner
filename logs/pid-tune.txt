@@ -1,0 +1,7 @@
+{"ts":1769717269591,"state":{"errorSec":10.384400000000001,"integralSec":null,"errorMoney":0.95,"integralMoney":null,"errorPrevSec":10.384400000000001,"errorPrevMoney":0.95}}
+{"ts":1769717279596,"state":{"errorSec":10.384400000000001,"integralSec":null,"errorMoney":0.95,"integralMoney":null,"errorPrevSec":10.384400000000001,"errorPrevMoney":0.95}}
+{"ts":1769717289605,"state":{"errorSec":10.384400000000001,"integralSec":null,"errorMoney":0.95,"integralMoney":null,"errorPrevSec":10.384400000000001,"errorPrevMoney":0.95}}
+{"ts":1769717314036,"state":{"errorSec":10.384400000000001,"integralSec":null,"errorMoney":0.95,"integralMoney":null,"errorPrevSec":10.384400000000001,"errorPrevMoney":0.95}}
+{"ts":1769717324038,"state":{"errorSec":10.384400000000001,"integralSec":null,"errorMoney":0.95,"integralMoney":null,"errorPrevSec":10.384400000000001,"errorPrevMoney":0.95}}
+{"ts":1769717334039,"state":{"errorSec":10.384400000000001,"integralSec":null,"errorMoney":0.95,"integralMoney":null,"errorPrevSec":10.384400000000001,"errorPrevMoney":0.95}}
+{"ts":1769717344040,"state":{"errorSec":10.384400000000001,"integralSec":null,"errorMoney":0.95,"integralMoney":null,"errorPrevSec":10.384400000000001,"errorPrevMoney":0.95}}
