@@ -1,16 +1,16 @@
 // /standalone/mk0/v4/deployer.js
-// Version: v0.8
+// Version: v0.9
 // Dependencies: /shared/hack.js, /shared/grow.js, /shared/weaken.js (light auto-die from home)
-// Merged Change: Treat home like any other server (deploy HGW workers with same method, no skip SCP on home—harmless as repo); ES6+ let/const/arrows; Doc: Simple single target HGW deployer (iterative over v3—3 dedicated workers, no combined). Resilient: Root/freeRAM guards, try-catch SCP/exec. Optimized: Floor threads max fit, 1s throttle. Func: Remote worker exec with target arg + threads; Skip scan/cracker if complete list, regen on new programs.
+// Merged Change: Changed to one worker/type per server with max threads (fill RAM with -t for determined type); ES6+ let/const/arrows; Doc: Simple single target HGW deployer (iterative over v0.8—3 dedicated workers, no combined). Resilient: Root/freeRAM guards, try-catch SCP/exec. Optimized: Floor threads max fit/type, 1s throttle. Func: Remote worker exec with type/target arg + max threads/server; Skip scan/cracker if complete list, regen on new programs.
 
 /** @param {NS} ns */
 export async function main(ns) {
   ns.disableLog('ALL');
   const target = ns.args[0] || 'n00dles';  // Args or fallback
-  const workers = ["/shared/hack.js", "/shared/grow.js", "/shared/weaken.js"];
-  const hackRam = ns.getScriptRam(workers[0]);  // Get once
-  const growRam = ns.getScriptRam(workers[1]);
-  const weakenRam = ns.getScriptRam(workers[2]);
+  const workers = {hack: "/shared/hack.js", grow: "/shared/grow.js", weaken: "/shared/weaken.js"};
+  const hackRam = ns.getScriptRam(workers.hack);  // Get once
+  const growRam = ns.getScriptRam(workers.grow);
+  const weakenRam = ns.getScriptRam(workers.weaken);
   let moneyThresh = ns.getServerMaxMoney(target) * 0.9;
   let securityThresh = ns.getServerMinSecurityLevel(target) + 5;
 
@@ -40,9 +40,9 @@ export async function main(ns) {
       }
 
       if (ns.hasRootAccess(host) && ns.getServerMaxRam(host) > 0) {  // Usable filter
-        // SCP workers from home (now includes home—harmless)
-        for (const worker of workers) {
-          await ns.scp(worker, host);
+        // SCP workers from home
+        for (const workerPath of Object.values(workers)) {
+          await ns.scp(workerPath, host);
         }
       }
     }
@@ -81,8 +81,8 @@ export async function main(ns) {
 
         if (ns.hasRootAccess(host) && ns.getServerMaxRam(host) > 0) {  // Usable filter
           // SCP workers from home
-          for (const worker of workers) {
-            await ns.scp(worker, host);
+          for (const workerPath of Object.values(workers)) {
+            await ns.scp(workerPath, host);
           }
         }
       }
@@ -93,17 +93,21 @@ export async function main(ns) {
       const ramAvailable = ns.getServerMaxRam(host) - ns.getServerUsedRam(host);
       if (ramAvailable <= 0 || !ns.hasRootAccess(host)) continue;  // Guard
 
-      // HGW loop (exec with target arg + threads per type RAM—same method for home/other)
+      // Determine type by thresh, run one worker with max threads (fill RAM with -t for that type)
+      let type, ramPer;
       if (ns.getServerSecurityLevel(target) > securityThresh) {
-        const threads = Math.floor(ramAvailable / weakenRam);
-        if (threads > 0) ns.exec("/shared/weaken.js", host, threads, target);
+        type = 'weaken';
+        ramPer = weakenRam;
       } else if (ns.getServerMoneyAvailable(target) < moneyThresh) {
-        const threads = Math.floor(ramAvailable / growRam);
-        if (threads > 0) ns.exec("/shared/grow.js", host, threads, target);
+        type = 'grow';
+        ramPer = growRam;
       } else {
-        const threads = Math.floor(ramAvailable / hackRam);
-        if (threads > 0) ns.exec("/shared/hack.js", host, threads, target);
+        type = 'hack';
+        ramPer = hackRam;
       }
+
+      const threads = Math.floor(ramAvailable / ramPer);
+      if (threads > 0) ns.exec(workers[type], host, threads, target);  // Exec one type with max -t
     }
 
     await ns.sleep(1000);  // 1s throttle
