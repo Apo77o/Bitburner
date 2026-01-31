@@ -1,8 +1,8 @@
 // /standalone/mk0/deployer.js
-// Version: v0.13 (Shoelace Iterated)
+// Version: v0.14 (Shoelace Iterated)
 // Dependencies: /standalone/mk0/worker-hack.js, /standalone/mk0/worker-grow.js, /standalone/mk0/worker-weaken.js
 // Changelog: 
-//   v0.13 Fixed countPrograms not defined (added modular countPrograms helper); PID opt (load tunable CONFIG from /data/deploy-config.json, reset integrals on low hack<500); Home cores integrate (guard undef/default1, mult in grow/weaken calcs); Prep trigger (if prep, spawn pid-simulator.js + reload config); Slim loop (one-time in initializer); ES6+ const/arrows/destructure/maps; Resilience: Try-catch config/baselines/sim, guards undef/NaN/low hack; Opt: Static CONFIG, min calcs. SF/formulas-free (base analyzes).
+//   v0.14 Fixed countPrograms not defined (added modular countPrograms helper w/ static EXES); PID opt (load tunable CONFIG from /data/deploy-config.json, reset integrals on low hack<500); Home cores integrate (guard undef/default1, mult in grow/weaken calcs); Prep trigger (if prep, spawn pid-simulator.js + reload config); Slim loop (one-time in initializer); ES6+ const/arrows/destructure/maps; Resilience: Try-catch config/baselines/sim, guards undef/NaN/low hack; Opt: Static CONFIG, min calcs. SF/formulas-free (base analyzes).
 
 /** @param {NS} ns */
 export async function main(ns) {
@@ -144,7 +144,7 @@ export async function main(ns) {
       }
 
       logPid(ns, { home: homePidState, net: netPidState });
-      ns.tprint(`[MK0 DEPLOY v0.13] ${targets.length}tgts → ${servers.length}hosts | Leftover: ${totalLeft.toFixed(0)}GB`);
+      ns.tprint(`[MK0 DEPLOY v0.14] ${targets.length}tgts → ${servers.length}hosts | Leftover: ${totalLeft.toFixed(0)}GB`);
     } catch (e) {
       ns.tprint(`[MK0 DEPLOY ERROR] ${e.message}`);
     }
@@ -152,7 +152,13 @@ export async function main(ns) {
   }
 }
 
-// Retained: countPrograms, isListComplete, buildUsables, getNetworkRooted (all base NS2, no SF)
+// Modular: Count port openers (fixed not defined)
+function countPrograms(ns) {
+  const exes = ['BruteSSH.exe', 'FTPCrack.exe', 'relaySMTP.exe', 'HTTPWorm.exe', 'SQLInject.exe'];
+  return exes.reduce((c, exe) => c + (ns.fileExists(exe, 'home') ? 1 : 0), 0);
+}
+
+// Retained: isListComplete, buildUsables, getNetworkRooted (all base NS2, no SF)
 
 // Retained+Opt: estimateThreads (base analyzes + 10% buffer workaround for drift)
 function estimateThreads(ns, target, pidAdj) {
@@ -275,54 +281,4 @@ function loadBaselines(ns) {
     ns.print(`[BASELINES LOAD ERROR] ${e.message} — fallback {}`);
     return {};
   }
-}
-
-// New Modular: Simulate PID (estimate params on test tgt, return error/stability/suggest)
-function simulatePid(ns, target, config, iterations) {
-  let srv = ns.getServer(target);  // Initial state
-  if (srv.moneyMax <= 0) throw new Error('Invalid sim tgt moneyMax=0');
-
-  let state = {};  // PID state
-  let errors = [];
-  let secDrift = [];
-  let moneyDrift = [];
-
-  for (let i = 0; i < iterations; i++) {
-    try {
-      const pidAdj = pidController(ns, srv, state, config);
-      state = pidAdj.state;
-
-      const req = estimateThreads(ns, target, pidAdj);  // Sim threads
-
-      // Sim action effects (base analyzes, guard undef)
-      let simSec = srv.hackDifficulty + (ns.hackAnalyzeSecurity(req.hack, target) || 0) + (ns.growthAnalyzeSecurity(req.grow, target) || 0);
-      simSec = Math.max(srv.minDifficulty, simSec - ns.weakenAnalyze(req.weaken) || srv.minDifficulty);  // Guard undef
-
-      let simMoney = srv.moneyAvailable * (1 - (ns.hackAnalyze(target) * req.hack) || 1);
-      simMoney = simMoney * (ns.growthAnalyze(target, srv.moneyMax / simMoney) * req.grow || srv.moneyMax);  // Guard undef
-
-      srv.hackDifficulty = isFinite(simSec) ? simSec : srv.hackDifficulty;  // Guard NaN
-      srv.moneyAvailable = isFinite(simMoney) ? simMoney : srv.moneyAvailable;
-
-      // Error metrics (sec/money drift)
-      const secError = Math.abs(srv.hackDifficulty - srv.minDifficulty) / srv.minDifficulty;
-      const moneyError = Math.abs(srv.moneyMax * 0.9 - srv.moneyAvailable) / srv.moneyMax;
-      errors.push((secError + moneyError) / 2);
-
-      secDrift.push(secError);
-      moneyDrift.push(moneyError);
-    } catch (e) {
-      ns.print(`[SIM ERROR] Iter ${i}: ${e.message}`);
-      break;  // Early exit error
-    }
-  }
-
-  const avgError = errors.reduce((a, b) => a + b, 0) / errors.length || 0;
-  const stability = (Math.max(...secDrift) - Math.min(...secDrift)) + (Math.max(...moneyDrift) - Math.min(...moneyDrift)) || 0;
-
-  let suggestion = 'Stable';
-  if (avgError > 0.05) suggestion = 'Increase Kp for faster response';
-  if (stability > 0.1) suggestion = 'Increase Kd for damp overshoot';
-
-  return { avgError, stability, suggestion };
 }
