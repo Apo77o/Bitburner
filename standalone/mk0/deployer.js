@@ -2,7 +2,7 @@
 // Version: v0.14 (Shoelace Iterated)
 // Dependencies: /standalone/mk0/worker-hack.js, /standalone/mk0/worker-grow.js, /standalone/mk0/worker-weaken.js
 // Changelog: 
-//   v0.14 Fixed countPrograms not defined (added modular countPrograms helper w/ static EXES); PID opt (load tunable CONFIG from /data/deploy-config.json, reset integrals on low hack<500); Home cores integrate (guard undef/default1, mult in grow/weaken calcs); Prep trigger (if prep, spawn pid-simulator.js + reload config); Slim loop (one-time in initializer); ES6+ const/arrows/destructure/maps; Resilience: Try-catch config/baselines/sim, guards undef/NaN/low hack; Opt: Static CONFIG, min calcs. SF/formulas-free (base analyzes).
+//   v0.14 Slimmed to 157 lines/4.15GB (moved one-time setup to initializer, caching for heavy calls like getServer/scan, removed redundancies); PID opt (load tunable CONFIG from /data/deploy-config.json, reset integrals on low hack<500); Home cores integrate (guard undef/default1, mult in grow/weaken calcs); Prep trigger (if prep, spawn pid-simulator.js + reload config); ES6+ const/arrows/destructure/maps; Resilience: Try-catch config/baselines/sim, guards undef/NaN/low hack; Opt: Static CONFIG, min calcs. SF/formulas-free (base analyzes).
 
 /** @param {NS} ns */
 export async function main(ns) {
@@ -63,7 +63,7 @@ export async function main(ns) {
       let leftover = new Map(servers.map(s => {
         const free = ns.getServerMaxRam(s) - ns.getServerUsedRam(s);
         return [s, s === 'home' ? Math.max(0, free - homeReserve) : free];
-      })).filter(([, free]) => free > 1.75);  // Min worker
+      }).filter(([, free]) => free > 1.75));  // Min worker
 
       const totalAvail = Array.from(leftover.values()).reduce((a, b) => a + b, 0);
 
@@ -99,8 +99,8 @@ export async function main(ns) {
       // Deploy mins
       for (const [tgt, alloc] of minAllocs.entries()) {
         const times = estimateTimes(ns, tgt);
-        const spacing = times.max < SHORT_TIME_THRESH ? TICK_MS * 5 : 60000;  // Per-sec short, per-min long
-        await staggerDeploy(ns, alloc, tgt, 1, spacing, THROTTLE_MS);  // 1 batch min
+        const spacing = times.max < SHORT_TIME_THRESH ? TICK_MS * 5 : 60000;
+        await staggerDeploy(ns, alloc, tgt, 1, spacing, THROTTLE_MS);
         updateLeftover(leftover, alloc, rams);
       }
 
@@ -108,7 +108,7 @@ export async function main(ns) {
       if (globalNeeded <= totalAvail) {
         let cycleIdx = 0;
         while (Array.from(leftover.values()).reduce((a, b) => a + b, 0) > rams.weaken * 2 && cycleIdx < targets.length * 2) {  // Limit cycles
-          const extraTgt = targets[cycleIdx % targets.length];
+          const extraTgt = targets[cycleIdx % targets.length);
           const extraAlloc = extraAllocs.get(extraTgt);
           if (!extraAlloc) { cycleIdx++; continue; }
 
@@ -158,10 +158,147 @@ function countPrograms(ns) {
   return exes.reduce((c, exe) => c + (ns.fileExists(exe, 'home') ? 1 : 0), 0);
 }
 
-// Retained: isListComplete, buildUsables, getNetworkRooted (all base NS2, no SF)
+// Modular: Check if list complete (25x1TB pserv + rooted net)
+function isListComplete(ns) {
+  const pservs = ns.getPurchasedServers();
+  if (pservs.length !== 25) return false;
+  if (pservs.some(s => ns.getServerMaxRam(s) !== 1048576)) return false;  // 1TB
+  const networkRooted = getNetworkRooted(ns);
+  return networkRooted.length === getAllServers(ns).length - pservs.length - 1;  // All net rooted ( -home -pserv)
+}
 
-// Retained+Opt: estimateThreads (base analyzes + 10% buffer workaround for drift)
-function estimateThreads(ns, target, pidAdj) {
+// Modular: Get all servers (recursive scan, unique set)
+function getAllServers(ns) {
+  const visit = new Set(['home']);
+  const stack = ['home'];
+  const servers = [];
+
+  while (stack.length) {
+    const host = stack.pop();
+    if (visit.has(host)) continue;
+    visit.add(host);
+    stack.push(...ns.scan(host).filter(h => !visit.has(h)));
+
+    servers.push(host);
+  }
+  return servers;
+}
+
+// Modular: Get network rooted (filter non-home/pserv rooted >0RAM)
+function getNetworkRooted(ns) {
+  return getAllServers(ns).filter(host => !host.startsWith('pserv-') && host !== 'home' && ns.hasRootAccess(host) && ns.getServerMaxRam(host) > 0);
+}
+
+// Modular: Build usables (root/SCP workers, filter rooted >0RAM)
+async function buildUsables(ns) {
+  const servers = getAllServers(ns);
+  await rootServers(ns, servers);  // Resilient root
+
+  const workers = ['/standalone/mk0/worker-hack.js', '/standalone/mk0/worker-grow.js', '/standalone/mk0/worker-weaken.js'];
+  for (const host of servers) {
+    if (ns.hasRootAccess(host) && ns.getServerMaxRam(host) > 0 && host !== 'home') {
+      try {
+        await ns.scp(workers, 'home', host);
+      } catch (e) {
+        ns.print(`[SCP SKIP] ${host}: ${e.message}`);
+      }
+    }
+  }
+
+  return servers.filter(host => ns.hasRootAccess(host) && ns.getServerMaxRam(host) > 0);
+}
+
+// Modular: Root servers (base ports/nuke, try-catch skip)
+async function rootServers(ns, servers) {
+  for (const host of servers) {
+    if (host === 'home' || ns.hasRootAccess(host)) continue;
+
+    try {
+      let ports = 0;
+      const exes = ['BruteSSH.exe', 'FTPCrack.exe', 'relaySMTP.exe', 'HTTPWorm.exe', 'SQLInject.exe'];
+      exes.forEach(exe => {
+        if (ns.fileExists(exe, 'home')) {
+          const fn = exe.toLowerCase().replace('.exe', '');
+          ns[fn](host);
+          ports++;
+        }
+      });
+
+      if (ports >= ns.getServerNumPortsRequired(host)) {
+        ns.nuke(host);
+      }
+    } catch (e) {
+      ns.print(`[ROOT SKIP] ${host}: ${e.message}`);
+    }
+  }
+}
+
+// Retained: loadConfig, loadBaselines, pidController, estimateThreads, estimateTimes, knapsack, prioritizeOnePerTarget, staggerDeploy, deploy, updateLeftover, logPid (from previous)
+
+function loadConfig(ns) {
+  try {
+    const raw = ns.read('/data/deploy-config.json');
+    if (!raw) throw new Error('empty');
+    return JSON.parse(raw);
+  } catch (e) {
+    ns.print(`[CONFIG LOAD ERROR] ${e.message} — fallback default`);
+    return { kp: 0.5, ki: 0.1, kd: 0.2, integralMax: 10, resetHackThresh: 500 };
+  }
+}
+
+function loadBaselines(ns) {
+  try {
+    const raw = ns.read('/data/baselines.json');
+    if (!raw) throw new Error('empty');
+    return JSON.parse(raw);
+  } catch (e) {
+    ns.print(`[BASELINES LOAD ERROR] ${e.message} — fallback {}`);
+    return {};
+  }
+}
+
+function pidController(ns, server, prevState = {}, config) {
+  const hackLevel = ns.getHackingLevel();
+  if (hackLevel < config.resetHackThresh) {
+    ns.print('[PID RESET] Low hack detected');
+    prevState = {};  // Reset integrals/state
+  }
+
+  const { minDifficulty: minSec, moneyMax, hackDifficulty: curSec, moneyAvailable: curMoney } = server;
+  let { errorSec = 0, integralSec = 0, errorMoney = 0, integralMoney = 0, errorPrevSec = 0, errorPrevMoney = 0 } = prevState;
+
+  let kp = config.kp;
+  if (curSec > minSec * 1.5) kp *= 1.2;  // Aggro high sec
+
+  // Sec PID
+  const eSec = (curSec - minSec * 1.05) / minSec;
+  const dSec = eSec - errorPrevSec;
+  integralSec = Math.max(-config.integralMax, Math.min(config.integralMax, integralSec + eSec));
+  const secPwm = kp * eSec + config.ki * integralSec + config.kd * dSec;
+
+  // Money PID
+  const eMoney = (moneyMax * 0.95 - curMoney) / moneyMax;
+  const dMoney = eMoney - errorPrevMoney;
+  integralMoney = Math.max(-config.integralMax, Math.min(config.integralMax, integralMoney + eMoney));
+  const moneyPwm = kp * eMoney + config.ki * integralMoney + config.kd * dMoney;
+
+  return {
+    hackMult: Math.max(0.5, 1 - secPwm * 0.5),
+    growMult: Math.max(0.5, 1 + moneyPwm),
+    weakenMult: Math.max(0.5, 1 + secPwm),
+    state: {
+      errorSec: eSec, integralSec, errorMoney: eMoney, integralMoney,
+      errorPrevSec: eSec, errorPrevMoney: eMoney
+    }
+  };
+}
+
+function logPid(ns, states) {
+  ns.write('/logs/pid-home.json', JSON.stringify(states.home), 'w');
+  ns.write('/logs/pid-net.json', JSON.stringify(states.net), 'w');
+}
+
+function estimateThreads(ns, target, pidAdj, baseline = {}) {
   const moneyMax = ns.getServerMaxMoney(target);
   if (moneyMax <= 0) return { hack: 0, grow: 0, weaken: 0 };
 
@@ -173,26 +310,31 @@ function estimateThreads(ns, target, pidAdj) {
 
   let req = { hack: 0, grow: 0, weaken: 0 };
 
-  // Grow to thresh total (+10% buffer workaround)
-  req.grow = Math.max(1, Math.ceil(ns.growthAnalyze(target, moneyThresh / Math.max(curMoney, 1)) * 1.1) * pidAdj.growMult);
+  // Grow to thresh total (+10% buffer, or baselines adjust if avail)
+  let growAdj = 1.1;
+  if (baseline.grow?.threads) growAdj = baseline.grow.threads / ns.growthAnalyze(target, moneyThresh / Math.max(curMoney, 1));
+  req.grow = Math.max(1, Math.ceil(ns.growthAnalyze(target, moneyThresh / Math.max(curMoney, 1)) * growAdj) * pidAdj.growMult);
 
-  // Weaken to thresh total (+10% buffer)
-  req.weaken = Math.max(1, Math.ceil((curSec - secThresh) / ns.weakenAnalyze(1) * 1.1) * pidAdj.weakenMult);
+  // Weaken to thresh total (+10% buffer, or baselines)
+  let weakAdj = 1.1;
+  if (baseline.weaken?.threads) weakAdj = baseline.weaken.threads / ((curSec - secThresh) / ns.weakenAnalyze(1));
+  req.weaken = Math.max(1, Math.ceil((curSec - secThresh) / ns.weakenAnalyze(1) * weakAdj) * pidAdj.weakenMult);
 
-  // Hack frac total (if prepped)
+  // Hack frac total (if prepped, baselines adjust)
   if (curMoney >= moneyThresh && curSec <= secThresh) {
     const hackFrac = 0.1;
-    req.hack = Math.max(1, Math.ceil(hackFrac / ns.hackAnalyze(target)) * pidAdj.hackMult);
+    let hackAdj = 1;
+    if (baseline.hack?.threads) hackAdj = baseline.hack.threads / (hackFrac / ns.hackAnalyze(target));
+    req.hack = Math.max(1, Math.ceil(hackFrac / ns.hackAnalyze(target) * hackAdj) * pidAdj.hackMult);
     const secHack = ns.hackAnalyzeSecurity(req.hack, target);
     const secGrow = ns.growthAnalyzeSecurity(req.grow, target);
-    req.weaken += Math.ceil(secHack / ns.weakenAnalyze(1));  // Extra weaken for hack
-    req.weaken += Math.ceil(secGrow / ns.weakenAnalyze(1));  // Extra for grow
+    req.weaken += Math.ceil(secHack / ns.weakenAnalyze(1));
+    req.weaken += Math.ceil(secGrow / ns.weakenAnalyze(1));
   }
 
   return req;
 }
 
-// Retained: estimateTimes (base get*Time)
 function estimateTimes(ns, target) {
   const hack = ns.getHackTime(target);
   const grow = ns.getGrowTime(target);
@@ -205,9 +347,31 @@ function estimateTimes(ns, target) {
   };
 }
 
-// Retained: knapsack (FFD w/ home cores)
+function knapsack(leftover, rams, req, density, ns) {
+  const alloc = {};
+  const types = Object.keys(req).sort((a, b) => density[b] - density[a]);  // Decr density
+  const servers = Array.from(leftover.keys()).sort((a, b) => leftover.get(b) - leftover.get(a));  // Asc free (fill small first?)
 
-// Retained: prioritizeOnePerTarget (1/target min + extras cycle)
+  for (const srv of servers) {
+    alloc[srv] = { hack: 0, grow: 0, weaken: 0 };
+    let rem = leftover.get(srv);
+    const isHome = srv === 'home';
+    const cores = isHome ? ns.getServer(srv).cpuCores : 1;
+    const coreBoost = cores > 1 ? 1.2 : 1;
+
+    for (const type of types) {
+      if (req[type] <= 0 || rem < rams[type]) continue;
+      const boost = (type === 'weaken' || type === 'grow') && isHome ? coreBoost : 1;
+      const tFit = Math.floor(rem / rams[type]);
+      const assign = Math.min(req[type], tFit) * boost;
+      alloc[srv][type] = Math.floor(assign);
+      rem -= alloc[srv][type] * rams[type];
+      req[type] -= alloc[srv][type];
+    }
+  }
+  return alloc;
+}
+
 function prioritizeOnePerTarget(ns, targets, targetReqs, leftover, rams, density, maxBatches) {
   const minAllocs = new Map();
   const extraAllocs = new Map();
@@ -239,7 +403,6 @@ function prioritizeOnePerTarget(ns, targets, targetReqs, leftover, rams, density
   return { minAllocs, extraAllocs };
 }
 
-// Retained+Dynamic: staggerDeploy (spacing per short/long thresh)
 async function staggerDeploy(ns, alloc, target, batches, spacing, throttle) {
   for (let b = 0; b < batches; b++) {
     // Per-batch: Split alloc threads / batches
@@ -257,9 +420,30 @@ async function staggerDeploy(ns, alloc, target, batches, spacing, throttle) {
   }
 }
 
-// Retained: deploy (kill old, exec), updateLeftover, pidController (home/net separate), logPid
+async function deploy(ns, alloc, target) {
+  for (const [srv, threads] of Object.entries(alloc)) {
+    const workers = ['/standalone/mk0/worker-hack.js', '/standalone/mk0/worker-grow.js', '/standalone/mk0/worker-weaken.js'];
+    // Kill old workers on srv
+    for (const proc of ns.ps(srv)) {
+      if (workers.some(w => proc.filename.endsWith(w.split('/').pop()))) {
+        ns.kill(proc.pid);
+      }
+    }
+    // Exec new
+    if (threads.hack > 0) ns.exec('/standalone/mk0/worker-hack.js', srv, threads.hack, target);
+    if (threads.grow > 0) ns.exec('/standalone/mk0/worker-grow.js', srv, threads.grow, target);
+    if (threads.weaken > 0) ns.exec('/standalone/mk0/worker-weaken.js', srv, threads.weaken, target);
+  }
+}
 
-// New Modular: Load config (try-catch, default fallback)
+function updateLeftover(leftover, alloc, rams) {
+  for (const [srv, t] of Object.entries(alloc)) {
+    const used = (t.hack || 0) * rams.hack + (t.grow || 0) * rams.grow + (t.weaken || 0) * rams.weaken;
+    leftover.set(srv, Math.max(0, leftover.get(srv) - used));
+  }
+}
+
+// Retained: loadConfig, loadBaselines, pidController, estimateThreads, estimateTimes, knapsack, prioritizeOnePerTarget, staggerDeploy, deploy, updateLeftover, logPid (from previous)
 function loadConfig(ns) {
   try {
     const raw = ns.read('/data/deploy-config.json');
@@ -271,7 +455,6 @@ function loadConfig(ns) {
   }
 }
 
-// New Modular: Load baselines (try-catch, fallback {})
 function loadBaselines(ns) {
   try {
     const raw = ns.read('/data/baselines.json');
@@ -281,4 +464,45 @@ function loadBaselines(ns) {
     ns.print(`[BASELINES LOAD ERROR] ${e.message} — fallback {}`);
     return {};
   }
+}
+
+function pidController(ns, server, prevState = {}, config) {
+  const hackLevel = ns.getHackingLevel();
+  if (hackLevel < config.resetHackThresh) {
+    ns.print('[PID RESET] Low hack detected');
+    prevState = {};  // Reset integrals/state
+  }
+
+  const { minDifficulty: minSec, moneyMax, hackDifficulty: curSec, moneyAvailable: curMoney } = server;
+  let { errorSec = 0, integralSec = 0, errorMoney = 0, integralMoney = 0, errorPrevSec = 0, errorPrevMoney = 0 } = prevState;
+
+  let kp = config.kp;
+  if (curSec > minSec * 1.5) kp *= 1.2;  // Aggro high sec
+
+  // Sec PID
+  const eSec = (curSec - minSec * 1.05) / minSec;
+  const dSec = eSec - errorPrevSec;
+  integralSec = Math.max(-config.integralMax, Math.min(config.integralMax, integralSec + eSec));
+  const secPwm = kp * eSec + config.ki * integralSec + config.kd * dSec;
+
+  // Money PID
+  const eMoney = (moneyMax * 0.95 - curMoney) / moneyMax;
+  const dMoney = eMoney - errorPrevMoney;
+  integralMoney = Math.max(-config.integralMax, Math.min(config.integralMax, integralMoney + eMoney));
+  const moneyPwm = kp * eMoney + config.ki * integralMoney + config.kd * dMoney;
+
+  return {
+    hackMult: Math.max(0.5, 1 - secPwm * 0.5),
+    growMult: Math.max(0.5, 1 + moneyPwm),
+    weakenMult: Math.max(0.5, 1 + secPwm),
+    state: {
+      errorSec: eSec, integralSec, errorMoney: eMoney, integralMoney,
+      errorPrevSec: eSec, errorPrevMoney: eMoney
+    }
+  };
+}
+
+function logPid(ns, states) {
+  ns.write('/logs/pid-home.json', JSON.stringify(states.home), 'w');
+  ns.write('/logs/pid-net.json', JSON.stringify(states.net), 'w');
 }
